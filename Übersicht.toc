@@ -1,0 +1,60 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {0.1}Zahlen}{2}{}%
+\contentsline {subsection}{\numberline {0.1.1}Die natürlichen Zahlen $\mathsf {N}$}{2}{}%
+\contentsline {subsection}{\numberline {0.1.2}Die ganzen Zahlen $\mathsf {Z}$}{2}{}%
+\contentsline {subsection}{\numberline {0.1.3}Rationale und irrationale Zahlen $\mathsf {Q}$, $\mathsf {R \backslash Q}$}{2}{}%
+\contentsline {subsection}{\numberline {0.1.4}Die reellen Zahlen $\mathsf {R}$}{3}{}%
+\contentsline {subsection}{\numberline {0.1.5}Komplexe Zahlen $\mathsf {C}$}{3}{}%
+\contentsline {subsection}{\numberline {0.1.6}Besondere Zahlen $\pi , e, i...$}{3}{}%
+\contentsline {subsubsection}{\nonumberline $\pi $ - Die Kreiszahl}{3}{}%
+\contentsline {subsubsection}{\nonumberline $e$ - Euler's Zahl}{4}{}%
+\contentsline {subsubsection}{\nonumberline Die imaginäre Zahl i}{4}{}%
+\contentsline {section}{\numberline {0.2}Grundlegende Rechengesetze}{4}{}%
+\contentsline {subsection}{\numberline {0.2.1}Verknüpfungsgesetze}{4}{}%
+\contentsline {subsubsection}{\nonumberline Kommutativgesetz}{4}{}%
+\contentsline {subsubsection}{\nonumberline Assoziativgesetz}{4}{}%
+\contentsline {subsubsection}{\nonumberline Distributivgesetz}{4}{}%
+\contentsline {subsection}{\numberline {0.2.2}Potenzen}{5}{}%
+\contentsline {subsection}{\numberline {0.2.3}Wurzeln}{5}{}%
+\contentsline {subsection}{\numberline {0.2.4}Logarithmus}{5}{}%
+\contentsline {section}{\numberline {0.3}Ableitungen}{6}{}%
+\contentsline {subsection}{\numberline {0.3.1}Was beschreibt eine Ableitung}{6}{}%
+\contentsline {subsection}{\numberline {0.3.2}Allgemeine Ableitungen}{6}{}%
+\contentsline {subsubsection}{\nonumberline Spezielle Ableitungen}{6}{}%
+\contentsline {subsubsection}{\nonumberline Ableitungsregeln}{7}{}%
+\contentsline {subsection}{\numberline {0.3.3}Partielle Ableitungen $\partial $}{7}{}%
+\contentsline {section}{\numberline {0.4}Geometrie}{7}{}%
+\contentsline {subsection}{\numberline {0.4.1}Phytagoras}{7}{}%
+\contentsline {subsection}{\numberline {0.4.2}Trignonometrie}{7}{}%
+\contentsline {subsection}{\numberline {0.4.3}Polarkoodinaten}{8}{}%
+\contentsline {subsection}{\numberline {0.4.4}Bogenmaß und Radian}{8}{}%
+\contentsline {section}{\numberline {0.5}Wahrscheinlichkeit}{8}{}%
+\contentsline {subsection}{\numberline {0.5.1}Kolmogorow' Axiome}{8}{}%
+\contentsline {subsection}{\numberline {0.5.2}Wahrscheinlichkeitskonzepte}{9}{}%
+\contentsline {subsection}{\numberline {0.5.3}Wahrscheinlichkeitsverteilungen}{9}{}%
+\contentsline {subsubsection}{\nonumberline Normalverteilung}{10}{}%
+\contentsline {subsubsection}{\nonumberline Exponentialverteilung}{10}{}%
+\contentsline {subsubsection}{\nonumberline Gleichverteilung}{11}{}%
+\contentsline {subsubsection}{\nonumberline Poissonverteilung}{12}{}%
+\contentsline {subsubsection}{\nonumberline t-Verteilung oder Student-t-Verteilung}{12}{}%
+\contentsline {subsubsection}{\nonumberline \textbf {$Chi^2$} Verteilung}{13}{}%
+\contentsline {subsubsection}{\nonumberline Binominalverteilung}{13}{}%
+\contentsline {subsubsection}{\nonumberline Bernoulliverteilung}{14}{}%
+\contentsline {subsection}{\numberline {0.5.4}Pearson's chi-square test}{14}{}%
+\contentsline {subsection}{\numberline {0.5.5}Bayes}{14}{}%
+\contentsline {section}{\numberline {0.6}Lineare Algebra}{14}{}%
+\contentsline {subsection}{\numberline {0.6.1}Determinante}{15}{}%
+\contentsline {section}{\numberline {0.7}Analysis}{15}{}%
+\contentsline {subsection}{\numberline {0.7.1}Funktionen/Abbildungen}{15}{}%
+\contentsline {subsubsection}{\nonumberline Kurvendiskussion \& allgemeine Begriffe}{15}{}%
+\contentsline {subsubsection}{\nonumberline Inversibilität}{15}{}%
+\contentsline {subsubsection}{\nonumberline Die wichtigsten Funktionen}{15}{}%
+\contentsline {subsubsection}{\nonumberline Polynome}{17}{}%
+\contentsline {subsubsection}{\nonumberline Integrale}{17}{}%
+\contentsline {subsubsection}{\nonumberline Der Grenzwert}{17}{}%
+\contentsline {subsection}{\numberline {0.7.2}Differentialgleichungen}{17}{}%
+\contentsline {subsection}{\numberline {0.7.3}Divergenz}{17}{}%
+\contentsline {subsubsection}{\nonumberline Kullback-Leibler}{17}{}%
+\contentsline {subsubsection}{\nonumberline Jensen-Shannon}{18}{}%
+\contentsline {section}{\numberline {0.8}more bullshit}{18}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
