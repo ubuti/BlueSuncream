@@ -8,7 +8,7 @@
 \usepackage{amsmath}
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
-\graphicspath{{./Images/}}
+\graphicspath{{./Bilder/}}
 
 \author{Simon Roske}
 \title{Mathe Helfer}
@@ -70,6 +70,12 @@ Die Reihenfolge der Verknüpfung spielt keine Rolle, e.g. $2+3=3+2$.
 Die Verknüpfung dreier Zahlen hängt nicht davon ab, wie wir sie gruppieren, e.g. $(2 + 3) + 4 = 2 + (3 + 4)$. 
 \subsubsection{Distributivgesetz}\label{Distributivgesetz}
 Der Umgang mit Klammern hängt vom Zahlenraum und der Art der Verknüpfung ab. Für Addition sowie Multiplikation für die Zahlenmenge $\mathsf{R}$ seien beide Verknüpfungen distributiv, sodass gilt: $2*(3+4)=2*3+2*4$. \hfill \break
+\subsubsection{Die binomischen Formeln}
+\begin{enumerate}
+    \item[1]: $(a+b)^2=a^2+2ab+b^2$
+    \item[2] $(a-b)^2=a^2-2ab+b^2$
+    \item[3]  $(a+b)\cdot(a-b)=a^2-b^2$
+\end{enumerate}
 \subsection{Potenzen}\label{Potenzen}
 Beginnen wir mit den wichtigsten Regeln:
 \begin{itemize}
@@ -118,8 +124,16 @@ Meistens werden Winkel in Grad angegeben. Aber ein Winkel von $45\deg$ kann auch
 \newline
 Die Umrechnung geschieht folgendermaßen: \framebox{$rad=\frac{\deg}{180\deg}*\pi$ und $\deg=\frac{rad}{\pi}*180\deg$}
 % ##############################
+\section{Statistik}
+\subsection{Statistische konzepte}\label{Statistische konzepte}
+\subsubsection{Durchschnitt, modus, median}
+\subsubsection{Varianz und Abweichung}\label{Varianz und Abweichung}
+\subsubsection{Abhängige und unabhängige Variable}\label{Abhängige und unabhängige Variable}
+\subsubsection{Korrelation}\label{Korrelation}
+\subsection{Statistische verfahren}\label{Statistische verfahren}
+\subsubsection{Pearson's chi-square test}\label{Pearson's chi-square test}
+% ##############################
 \section{Wahrscheinlichkeit}\label{Wahrscheinlichkeit}
-In diesem Abschnitt geht es um Wahrscheinlichkeit. Es werden Verteilungen, Bayes' Ansatz und verschiedene Konzepte zur Berechnung der Wahrscheinlichkeit thematisiert. Am Ende wird ein wenig über statistische Verfahren zu deren Testung gehen.
 \subsection{Kolmogorow' Axiome}\label{Kolmogorow's Axiome}
 Kolmogorow's drei Axiome - so heißen die Grundsätze einer Theorie - sind die bekannteste Beschreibung der grundlegenden Eigenschaften der Wahrscheinlichkeitsrechnung. Seien $\Omega={\omega_1, \omega_2, \omega_3, \omega_4, \omega_5, \omega_6}$ die Ergebnismenge eines Zufallsexperiments, A und B Teilmengen von $\Omega$ und P eine Funktion, die jedem A eine reelle Zahl zwischen 0 und 1 zuordnet. P(A) wird Wahrscheinlichkeit genannt, falls folgende drei Bedingungen (Axiome) erfüllt werden:
 \begin{enumerate}
@@ -128,9 +142,9 @@ Kolmogorow's drei Axiome - so heißen die Grundsätze einer Theorie - sind die b
     \item $P(A \cup B)=P(A)+P(B)$ Dies bedeutet also, dass für kein Ergebnis beide Ereignisse erfüllt werden. A und B nennt man in diesem Fall auch disjunkt.
 \end{enumerate}
 \subsection{Wahrscheinlichkeitskonzepte}\label{Wahrscheinlichkeitskonzepte}
-Was ist die joint probability, die marginal und die conditional probability\footnote{Was sind die deutschen Konzepte?}? Darum geht es hier. Schauen wir uns folgendes Diagramm dafür an: Die \textit{Wahrscheinlichkeit gleichzeitiger Erreignisse (joint prob.)} bedeutet, dass für die zwei Variablen des Diagramms ein Wert gegeben ist, also dass $P(X=male, Y=rugby)=\frac{100}{500}$. Man kommt auch zu diesem Ergebnis, indem man die bedingte Wahrscheinlichkeit mit der marginalen Wahrscheinlichkeit multipliziert, also $P(X,Y)=P(x)\cdot P(y|x)=P(y)\cdot P(x|y)=\frac{125}{500}\cdot \frac{100}{125}=\frac{270}{500}\cdot \frac{100}{270}$. Die \textit{marginale Wahrscheinlichkeit} ist die Wahrscheinlichkeit einer Kategorie anzugehören ohne Weiteres, also dass X=x oder Y=y für bestimmte x und y ist. Ein Beispiel: $P(X=female)=\frac{230}{500}=0,46$ oder $P(Y=other)=\frac{180}{500}=0,36$. Schließlich die bedingte Wahrscheinlichkeit, also der Fall dass für eine Variable schon ein Wert gesetzt ist der den Wert der Zielvariable einschränkt bzw. spezifiziert, wir schreiben ganz generell: $P(X|Y)=\frac{P(X,Y)}{P(Y)}$. Bayes \ref{Bayes} wird diesen Satz noch ausweiten.
+Was ist gemeinsame, Grenz- und bedingte Wahrscheinlichkeit? Die Wahrscheinlichkeit gemeinsamer Erreignisse bedeutet, dass für die zwei Variablen ein Wert gegeben ist, also dass beispielsweise $P(X=male, Y=rugby)=\frac{100}{500}$. Man kommt auch zu diesem Ergebnis, indem man die bedingte Wahrscheinlichkeit mit der  Grenzwahrscheinlichkeit multipliziert, also $P(X,Y)=P(x)\cdot P(y|x)=P(y)\cdot P(x|y)=\frac{125}{500}\cdot \frac{100}{125}=\frac{270}{500}\cdot \frac{100}{270}$. Die  Grenzwahrscheinlichkeit ist die Wahrscheinlichkeit einer Kategorie anzugehören, also dass X=X und Y=y, oder andersherum. Ein Beispiel: $P(X=female)=\frac{230}{500}=0,46$ oder $P(Y=other)=\frac{180}{500}=0,36$. Schließlich die bedingte Wahrscheinlichkeit, also der Fall dass für eine Variable schon ein Wert gesetzt ist der den Wert der Zielvariable einschränkt bzw. spezifiziert, wir schreiben ganz generell: $P(X|Y)=\frac{P(X,Y)}{P(Y)}$.
 \subsection{Wahrscheinlichkeitsverteilungen}\label{Wahrscheinlichkeitsverteilungen} Die Wahrscheinlichkeitsverteilung wird in zwei Arten unterteilt, die diskrete und die stetige Zufallsvariable. Diese sind dann jeweils noch mehrmals in verschiedene Kategorien unterteilt. Da es sich bei den Wahrscheinlichkeitsverteilungen um Funktionen handelt, gibt es immer einen Funktionswert und einen x-Wert.
-Die \textbf{Diskrete Zufallsvariable} zeichnet sich dadurch aus, dass sie eine begrenzte, abzählbare Anzahl an möglichen Ausprägungen hat. Beispiele dafür sind der Münz- oder Würfelwurf. Beide haben nur eine begrenzte Anzahl an möglichen Ausprägungen, der Münzwurf hat zum Beispiel zwei und der Würfelwurf hat dafür 6 Ausprägungen. Die \textbf{kontinuierliche oder stetige Zufallsvariable} dagegen hat eine unbegrenzte Anzahl an möglichen Ausprägungen. Als Beispiel kann man dafür die Haarlänge nehmen. Theoretisch könnte man sagen, dass es von keinen Haaren, bis zu den weltweit längsten Haaren eine begrenzte Anzahl an Zentimetern gibt. Jedoch, wenn man die Länge in immer genaueren Einheiten angeben würdest, hätte man unendlich viele verschiedene Haarlängen auf der Welt, zumal es keine festgelegte Grenze für das Haarwachstum gibt. Die \textbf{Wahrscheinlichkeits Dichtefunktion (probability density)} ist eine Wahrscheinlichkeitsfunktion, die kontinuierlich ist. Die Summe der Wahrscheinlichkeiten aller Ergebnisse ist in einem Zufallsexperiment immer gleich 1. In einer stetigen Zufallsverteilung muss die 1 auf unendlich viele Ausprägungen verteilt werden. Das führt dazu, dass die Wahrscheinlichkeit für eine einzelne Ausprägung praktisch gegen 0 geht. Ebendarum lässt sich in der Dichtefunktion nicht die Wahrscheinlichkeit einer einzelnen Ausprägung ableiten. Um aber trotzdem an ein Ergebnis zu gelangen, kannst du über mehrere Ausprägungen hinweg \textit{integrieren} und erhältst so die Wahrscheinlichkeit für diese Menge an Ausprägungen (Verteilungsfunktion). Genannt werden hier der Erwartungswert $E$, die Varianz $V$ (Standardabweichung ist $\sqrt V$), die Funktion der Wahrscheinlichkeitsverteilung, aber nicht die Verteilungsfunktion.
+Die \textbf{Diskrete Zufallsvariable} zeichnet sich dadurch aus, dass sie eine begrenzte, abzählbare Anzahl an möglichen Ausprägungen hat. Beispiele dafür sind der Münz- oder Würfelwurf. Beide haben nur eine begrenzte Anzahl an möglichen Ausprägungen, der Münzwurf hat zum Beispiel zwei und der Würfelwurf hat dafür 6 Ausprägungen. Die \textbf{kontinuierliche oder stetige Zufallsvariable} dagegen hat eine unbegrenzte Anzahl an möglichen Ausprägungen. Als Beispiel kann man dafür die Haarlänge nehmen. Theoretisch könnte man sagen, dass es von keinen Haaren, bis zu den weltweit längsten Haaren eine begrenzte Anzahl an Zentimetern gibt. Jedoch, wenn man die Länge in immer genaueren Einheiten angeben würdest, hätte man unendlich viele verschiedene Haarlängen auf der Welt, zumal es keine festgelegte Grenze für das Haarwachstum gibt. Die \textbf{Wahrscheinlichkeits Dichtefunktion} ist eine Wahrscheinlichkeitsfunktion, die kontinuierlich ist. Die Summe der Wahrscheinlichkeiten aller Ergebnisse ist in einem Zufallsexperiment immer gleich 1. In einer stetigen Zufallsverteilung muss die 1 auf unendlich viele Ausprägungen verteilt werden. Das führt dazu, dass die Wahrscheinlichkeit für eine einzelne Ausprägung praktisch gegen 0 geht. Ebendarum lässt sich in der Dichtefunktion nicht die Wahrscheinlichkeit einer einzelnen Ausprägung ableiten. Um aber trotzdem an ein Ergebnis zu gelangen, kannst du über mehrere Ausprägungen hinweg \textit{integrieren} und erhältst so die Wahrscheinlichkeit für diese Menge an Ausprägungen (Verteilungsfunktion). Genannt werden hier der Erwartungswert $E$, die Varianz $V$ (Standardabweichung ist $\sqrt V$), die Funktion der Wahrscheinlichkeitsverteilung, aber nicht die Verteilungsfunktion.
 \subsubsection{Normalverteilung}\label{Normalverteilung}
 Die Normalverteilung wird auch Gaußsche Glockenkurve genannt. Die beiden Parameter ($\mu$  und $\sigma$) geben Mittelwert sowie Standardabweichung der Normalverteilung an. Der zentrale Grenzwertsatz besagt, dass unter bestimmten allgemeinen Voraussetzungen die Summe aus n unabhängigen, identisch verteilten Zufallsvariablen wiederum normalverteilt ist. Als Beispiel se nehmen wir den Wurf von n fairen Würfeln: Wenn man man nur einen Würfel wirft, so ist jede Augenzahl gleich wahrscheinlich. Wirft man hingegen n-viele Würfel, so wird die mittlere Augenzahl durch die Normalverteilung beschrieben. Daher ist die Normalverteilung die Wichtigste, da natürliche Phänomene mit ausreichend großem n sich ihr annähern. Die Formel zur Berechnung der Verteilung lautet \textit{$f(x,\mu, \sigma)=\frac{1}{\sigma\sqrt{2\pi}}*e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$}. Es gilt: $E=\mu$ und $V=\sigma^2$, bzw. $\sigma$ (Standardabweichung). Die gesamte Fläche, die von der Kurve der Normalverteilung eingeschlossen wird ist stets 1. Ist $\mu=0$ und $\sigma=1$ spricht man von der Standardnormalverteilung, die durch eine vereinfachte Gleichung (da $\mu=0$ wegfällt und $\sigma=1$) beschrieben wird: $\frac{1}{2\pi}e^-\frac{1}{2}x^2$. Der Vorfaktor stellt sicher, dass die gesamte Fläche unter der Kurve (und damit auch das Integral von -inf bis inf) eine Fläche von genau 1 hat. Die $\frac{1}{2}$ im Exponenten der e-Funktion gibt der Normalverteilung eine Einheitsvarianz. Jede Normalverteilung ist eine Variante der Standardnormalverteilung mit gestreckter Standardabweichung ($\frac{1}{\sigma}$) und \textit{z-transfomiertem} $\frac{x-\mu_x}{\sigma}$. Geschrieben wird die Normalverteilung für gewöhnlich so: $\mathcal{N}(\mu, \sigma^2)$. 
 \subsubsection{Exponentialverteilung}\label{Exponentialverteilung}
@@ -185,7 +199,6 @@ und $f_{bernoulli}(x)=\begin{cases}
     p & {if x=1} \\
     0 & {sonst.} \\
 \end{cases}$
-\subsection{Pearson's chi-square test}\label{Pearson's chi-square test}
 \subsection{Bayes}\label{Bayes}
 % ##############################
 \section{Lineare Algebra}\label{Lineare Algebra}
@@ -209,16 +222,18 @@ Zur Veranschulichung empfiehlt es sich die $\det$ als Faktor vorzustellen, der F
 % ##############################
 \section{Analysis}\label{Analysis}
 \subsection{Funktionen/Abbildungen}\label{Funktionen/Abbildungen}
-\subsubsection{Inversibilität}\label{Inversibilität}
-Eine Funktion heißt umkehrbar eindeutige (\textbf{eineindeutige}) Funktion, wenn nicht nur jedem Argument eindeutig ein Funktionswert zugeordnet ist, sondern auch umgekehrt zu jedem Funktionswert genau ein Argument gehört. Um die Umkehrfunktion einer Abbildung zu ehalten, löst man die Funktionsgleichung nach x um und vertauscht dann die Variablen. Zum Beispiel: $f(x)=x^2+1=y \rightarrow f^{-1}=x=\sqrt{y-1}$, vertauschen führt zu $f^{-1}=\sqrt{x-1}=y \hspace{0.1cm} | \hspace{0.1cm} \forall x \neq 1$. Allerdings, ist diese Funktion teilweise nicht definiert und daher nicht invertierbar. Das gilt nur solange wir die negativen Zahlen zulassen. Nehmen wir $\textit{R}^+$, ist $f(x)$ invertierbar.
-\subsubsection{Die wichtigsten Funktionen}\label{Die wichtigsten Funktionen}
+\subsubsection{Definitionsbereich und Wertebereich}\label{Definitionsbereich und Wertebereich}
+Die Definitionsmenge ist die Menge aller x-Werte, die in die Funktion eingesetzt werden dürfen. Die Wertemenge ist die Menge aller y-Werte, die die Funktion unter Beachtung ihrer Definitionsmenge annehmen kann. Wird jedes Element des Wertebereichs 'getroffen', so heißt die Funktion \textbf{surjektiv}. Bilden keine zwei Elemente des Definitionsbereichs auf dasselbe im Wertebereich ab, so heißt die Funktion \textbf{injektiv}. Ist eine Abbildung sowohl surjektiv als auch injekttiv, so heißt sie \textbf{bijektiv}.
+\subsubsection{Spezielle Funktionen}\label{Die wichtigsten Funktionen}
 Eine \textbf{lineare Funktion} ist einer Funktion der allgemeinen Form $f(x)=m\cdot x +b$.
 \\ \\
 \textbf{Quadratische} Funktionen haben die allgemeine Form $f(x)=a\cdot x^2+b\cdot x+c$. Dabei ist $a \neq 0$ und b und c Konstanten. Da $x^2$ der höchste Term ist (die höchste Ordnung) ist er der entscheidende Faktor für das Aussehen der Funktion\footnote{https://www.schlauerlernen.de/quadratische-funktion/}.
 \\ \\
+Eine Funktion $f$ mit der Funktionsgleichung $f(x)=x^n | n \in Z/\{0\}$ heißt \textbf{Potenzfunktion}. Wichtig ist hier zwischen den Exponenten zu unterscheinden, da hier grade/ungrade und positve/negative Exponenten die Potenzfunktion verschienden aussehen lassen. So nennt man Potenzfunktionen mit positivem Exponentem größer als 1 \textbf{Parabel}, und jene mit negativem Exponetem \textbf{Hyperbel}.
+\\ \\
 \textbf{Die Sigmoid Funktion}: Es gibt mehrere Sigmoidsche Funktionen. Zum Beispiel die \textbf{logistische Sigmoid}, \textbf{die Arctangent} und \textbf{die hyperbolische tangent Funktion}. Charakteristisch ist eine s-förmige Kurve, die du auch als logistische Kurve kennst. Sigmoidsche Funktionen mappen alle x-Werte zwischen 0 und 1 ($S_{log} \rightarrow$ Wahrscheinlichkeit), zwischen -1 und 1 ($S_{arctangent}$) oder noch größere Intervalle. Damit kann sie großartig als Aktivierungsfunktion in einem NN genutzt werden, um die letzte Schicht (output) zu erstellen. Außerdem ist bemerkenswert, dass die logistische Sigmoid für plus und minus unendlich gegen ihre spezifischen Limits covergiert. Daher hat sie stets Gradienten ungleich 0. Die \textbf{logistische Sigmoid} wird häufig nur \textbf{Sigmoid} genannt und wird so geschrieben:
 \\ \\
- $S(x)=\frac{1}{1+\exp(-x)} \equiv \frac{\exp(x)}{\exp(x)+1}$
+$S(x)=\frac{1}{1+\exp(-x)} \equiv \frac{\exp(x)}{\exp(x)+1}$
 \\ \\
 Die \textbf{hyperbolische tangent Funktion}, die alle Werte in den Wertebereich = [-1,1] mapped, hat folgende Form:
 \\ \\ $S_{tan}(x)=\frac{\exp(x)-\exp(-x)}{\exp(x)+\exp(-x)}$ 
@@ -232,6 +247,10 @@ Bekannt ist sie aus der Trignonometrie(\Ref{Trignonometrie}), da sie die inverse
 $ReLU(x)=max(0,x)$
 \\ \\
 Das coole an ihr, dass ihre Ableitung stets 1 ist für $x>0$ und dass sie nicht vom \textit{vanishing gradient} betroffen ist, der für große NN eine schnelle Konvergenz gegen 0 in der Backpropagation hat. In diesem Aspekt ist ReLU der Sigmoid klar überlegen, vorausgesetzt man kompensiert für negative x (deren Gradient $= 0$ ist), indem ein kleiner Term dazugerechnet wird.
+\subsubsection{Inversibilität}\label{Inversibilität}
+Eine Funktion heißt umkehrbar eindeutige (\textbf{eineindeutige}) Funktion, wenn nicht nur jedem Argument eindeutig ein Funktionswert zugeordnet ist, sondern auch umgekehrt zu jedem Funktionswert genau ein Argument gehört. Um die Umkehrfunktion einer Abbildung zu ehalten, löst man die Funktionsgleichung nach x um und vertauscht dann die Variablen. Zum Beispiel: $f(x)=x^2+1=y \rightarrow f^{-1}=x=\sqrt{y-1}$, vertauschen führt zu $f^{-1}=\sqrt{x-1}=y \hspace{0.1cm} | \hspace{0.1cm} \forall x \neq 1$. Allerdings, ist diese Funktion teilweise nicht definiert und daher nicht invertierbar. Das gilt nur solange wir die negativen Zahlen zulassen. Nehmen wir $\textit{R}^+$, ist $f(x)$ invertierbar.
+\subsubsection{Nullstellen}
+Nullstellen sind diejenigen Punkte einer Funktion, an denen der y-Wert den Wert 0 hat. Um sie auszurechnen setzen wir die Funktionsgleichung gleich 0 und lösen sie. Für Ableitungen ist das Verfahren dasselbe, doch hat es dann eine etwas andere Bedeutung, nämlich ist die (erste) Ableitung als Steigungsgraph der Funktion anzusehen, und diejenigen Punkte die im Ableitungsgraphen Nullstellen sind, sind in der \textbf{Stammfunktion} maxima oder minima. Die zweite Ableitung mit ihren Nullstellen gibt die \textbf{Wendepunkte} der Stammfunktion wieder. 
 \subsection{Ableitungen}\label{Ableitungen}
 Was beschreibt eine Ableitung? Die Ableitung beschreibt das Änderungsverhalten von Funktionen. Am interessantesten sind die erste und zweite Ableitung, da man hier graphisch leicht Nullstellen mit Maxima und Minima gleichsetzen kann. Die Nullstellen in der zweiten Ableitung geben Nullstellen der ersten Ableitung und damit Wende- oder Sattelpunkte der Abbildung wieder. Ableitungen werden mit $f'(x) = \frac{d f(x)}{dx} = \frac{d}{dx}f(x) = \frac{dy}{dx} = y'$ und mit $\partial$ für d (für partielle Ableitungen) kenntlichgemacht. 
 \subsubsection{Spezielle Ableitungen}\label{Spezielle Ableitungen}
@@ -269,4 +288,15 @@ Eine Differentialgleichung ist eine Gleichung, in der eine Funktion und auch Abl
 \subsubsection{Kullback-Leibler}\label{Kullback-Leibler}
 $D_{KL}=\mathbf{E}=[log(\frac{p(x)}{q(x)} )]= \int_{a}^{b}  \log (p(x)/q(x))\,dx  $
 \subsubsection{Jensen-Shannon}\label{Jensen-Shannon}
+\subsection{Lösungstrategien}
+Wir beschreiben hier ein paar generelle Technicken und Tricks, die beim Lösen von Gleichungen hilfreich sein können. 
+\section{Modellierung}
+\begin{enumerate}
+    \item Binomische Formeln nutzen 
+    \item Faktorisieren: $2x^3+4x^2-2x-4=0 \equiv 2(x+1)(x-1)(x+2)$
+\end{enumerate}
+\subsection{Regression}
+\subsubsection{Lineare Regression}
+\subsubsection{Polynomilae Regression}
+\subsubsection{Logistische Regression}
 \end{document}
