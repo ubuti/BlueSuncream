@@ -140,16 +140,16 @@ Damit is e der Grenzwert (\ref{Der Grenzwert}) der (exponentiell) steigenden Zah
 
 
 \section{Grundlagen \& Rechengesetze}\label{Grundlegende Rechengesetze}
-
+Eine Verknüpfung lässt sich definieren als die Art und Weise wie 2 Objekte ein Drittes definieren. Die Verknüpfung wird abstrakt mit '$\circ$' ausgedrückt.
 
 \subsubsection{Kommutativgesetz}\label{Kommutativgesetz}
-Die Reihenfolge der Verknüpfung spielt keine Rolle, e.g. $2+3=3+2$. 
+Die Reihenfolge der Verknüpfung spielt keine Rolle, e.g. $2\circ 3=3 \circ 2$. 
 
 \subsubsection{Assoziativgesetz}\label{Assoziativgesetz}
-Die Verknüpfung dreier Zahlen hängt nicht davon ab, wie wir sie gruppieren, e.g. $(2 + 3) + 4 = 2 + (3 + 4)$. 
+Die Verknüpfung dreier Zahlen hängt nicht davon ab, wie wir sie gruppieren, e.g. $(2 \circ 3) \circ 4 = 2 \circ (3 \circ 4)$. 
 
 \subsubsection{Distributivgesetz}\label{Distributivgesetz}
-Der Umgang mit Klammern hängt vom Zahlenraum und der Art der Verknüpfung ab. Für Addition sowie Multiplikation für die Zahlenmenge $\mathsf{R}$ seien beide Verknüpfungen distributiv, sodass gilt: $2*(3+4)=2*3+2*4$. \hfill \break
+Der Umgang mit Klammern hängt vom Zahlenraum und der Art der Verknüpfung ab. Für Addition sowie Multiplikation für die Zahlenmenge $\mathsf{R}$ seien beide Verknüpfungen distributiv, sodass gilt: $2\odot (3\oplus 4)=2\odot 3\oplus 2\odot 4$. \hfill \break
 
 \subsubsection{Die binomischen Formeln}
 \begin{enumerate}
@@ -159,32 +159,41 @@ Der Umgang mit Klammern hängt vom Zahlenraum und der Art der Verknüpfung ab. F
 \end{enumerate}
 
 \subsection{Potenzen}\label{Potenzen}
-Beginnen wir mit den wichtigsten Regeln:
+Eine Potenz ist eine abgekürzte Schreibweise der Multiplikation.
 \begin{itemize}
     \item $a^0=1$
     \item $a^1=a$
     \item $a^{-1}=\frac{1}{a}$ 
-    \item $(\frac{a}{b})^{-n}=(\frac{b}{a})^n$ 
-\end{itemize}
-
-Generell schreiben wir $a^{-n}=\frac{1}{a^n} \hspace{4px} sowie \hspace{4px} a^n=\frac{1}{a^{-n}}$. Gibt es mehr als eine Potenz, muss man sie miteinander verrechnen, unzwar wie folgt:
-\begin{itemize}
-    \item $a^p * a^q = a^p + a^q$
-    \item $a^p : a^q = a^p - a^q$
+    \item $a^{-n}=\frac{1}{a^n}$
+    \item $a^n=\frac{1}{a^{-n}}$
+    \item $a^p * a^q = a^{p+q}$
+    \item $a^p : a^q = a^{p-q}$
     \item $a^q * b^q = (a * b)^q$
     \item $a^q : b^q = (a : b)^q$
     \item $(a^p)^q = a^{p*q}$
-    \item $\frac{a^m}{a^n}=a^{n-m}$.
+    \item $\frac{a^m}{a^n}=a^{m-n}$
+    \item $\frac{a^n}{b^n}=(\frac{a}{b})^n$.
+    \item $(\frac{a}{b})^{-n}=(\frac{b}{a})^n$ 
 \end{itemize}
 
 \subsection{Wurzeln}\label{Wurzeln}
-Als Wurzeln von etwas bezeichnet man die Zahl die mit sich selbst multipliziert die Wurzel ergibt. Bei der Wurzel muss es sich nicht um eine qudratische Handeln, sondern jegliche Wurzel (kubisch, ...) ist denkbar. Als Potenz geschrieben ist die qudratische Wurzel $\sqrt{x}=x^{\frac{1}{2}}$ und jede andere Wurzel $\sqrt[n]{x}=x^{\frac{1}{n}}$. Haben wir eine Potenz mit einer Lösung, dann gilt $x^n=a \Leftrightarrow x=\sqrt[n]{a}$. Viel mehr gibt es hier nicht zu wissen!
+Die Wurzel einer Zahl ergibt mit sich selbst multipliziert die Wurzel. Im Normalfall handelt es sich um eine qudratische Multiplikation, aber auch höhere Wurzlen - e.g. die Kubische - ist denkbar. Als Potenz geschrieben ist die qudratische Wurzel $\sqrt{x}=x^{\frac{1}{2}}$ und $\sqrt[n]{x}=x^{\frac{1}{n}}$. Z.B.: $\sqrt[3]{125} = 125^{\frac{1}{3}}$.
+Haben wir eine Potenz mit einer Lösung, dann gilt $x^n=a \Leftrightarrow x=\sqrt[n]{a}$.
+\skiptwolines
+Beispiel: $3^4 = 81 \equiv \sqrt[4]{81} = 3$
+\skiptwolines
+Randnotiz: Damit ist die n-te Wurzel die inverse Funktion (\ref{Inversibilität}) zu der Funktion: $x^n$, die abhängig von x ist (quadratische, kubische, etc.).
 
 \subsection{Logarithmus}\label{Logarithmus}
-Die Idee hinter dem Logarithmus ist: Mit welcher Zahl muss ich die Basis a potenzieren um y zu bekommen? Die Schreibweise hierbei ist $\log_a(x)=y$. Dabei muss beachtet werden, dass das Logarithmieren von Null und negativen Zahlen nicht definiert ist. Außerdem ist der Logarithmus die Umkehrfunktion zur Exponentialfunktion $f(x)=a^x=y$, denn $\log_a(y)=x$ (Beide haben die gleiche Basis). Haben wir die Exponentialfunktion $f(x)=e^x$ mit $e$ als Basis, so ist der Logarithmus Naturalis (ln) $f^{-1}$. Hier sind die Rechengesetze für den Log:\\
+\textbf{Frage}: Mit welcher Zahl muss ich a potenzieren um y zu bekommen? Geschrieben als $\log_a(x)=y$. Beachte, dass das Logarithmieren von Null und negativen Zahlen \textbf{nicht definiert} ist! 
+\skiptwolines
+Außerdem ist der Logarithmus die Umkehrfunktion zur Exponentialfunktion:
+ 
+\skiptwolineswithcenteredexpr{$f(x)=a^x=y$, $f^{-1}(y)=\log_a(y)=x$} 
+Also liefert der log. den Exponenten der Eexponentialfunktion zur Basis a. Haben wir die Exponentialfunktion $f(x)=e^x$ mit $e$ als Basis, so ist der Logarithmus Naturalis (ln) = $f^{-1}$. Der Logarithmus hat ein paar eigene Rechenregeln:\\
 \begin{itemize}
-    \item $\log_a(a)=1$
     \item $\log_a(1)=0$
+    \item $\log_a(a)=1$
     \item $\log_a(p*q)=\log_a(p)+\log_a(q)$
     \item $\log_a(\frac{p}{q})=\log_a(p)-\log_a(q)$
     \item $\log_a(p^q)=q*\log_a(p)$
@@ -192,7 +201,9 @@ Die Idee hinter dem Logarithmus ist: Mit welcher Zahl muss ich die Basis a poten
     \item $\log_a(p)=\frac{\log_b(p)}{\log_b(a)}$
 \end{itemize}
 \vspace{0.6cm}
-Zum Abschluss noch eine Bemerkung zur Logskale: Logarithmische Skalierungen sind hilfreich, wenn die angezeigten Daten weitaus höhere oder niedrigere Werte aufweisen als die restlichen Daten oder wenn der Prozentsatz oder die Verhältnisunterschiede zwischen Werten von Bedeutung sind. Sie können angeben, ob eine logarithmische Skala verwendet werden soll, wenn die Werte im Diagramm einen sehr großen Bereich abdecken. Eine logarithmische Skala potenziert den Basiswert 10 mit einem Wert. Beispiel: 10 hat einen Logarithmus von 1, da 10 potenziert mit 1 gleich 10 ist. 100 hat einen Logarithmus von 2, da 10 potenziert mit 2 gleich 100 ist, und so weiter.% ##############################
+Logarithmische Skalierungen ist hilfreich, wenn die Daten stark variieren oder wenn die Verhältnisunterschiede zwischen Werten von Bedeutung sind, denn \textit{logarithmische Skalierung deckt einen größeren Bereich ab}. Beispiel:
+\skiptwolines
+$\log_{10}(10)=1, \log_{10}(100)=2, \log_{10}(1000)=3$.
 
 
 \section{Geometrie}\label{Gemoetrie}

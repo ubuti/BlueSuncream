@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  2 OCT 2023 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  7 OCT 2023 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,111 +283,131 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 180--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
+Underfull \hbox (badness 10000) in paragraph at lines 204--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--216
+Underfull \hbox (badness 10000) in paragraph at lines 216--219
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 223--227
 
  []
 
 
-Overfull \hbox (31.01135pt too wide) in paragraph at lines 212--216
+Overfull \hbox (31.01135pt too wide) in paragraph at lines 223--227
 \OT1/cmr/m/n/10 Die Um-rech-nung ge-schieht fol-gen-der-ma-^^Yen: [] 
  []
 
-[8] [9] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+[9] [10] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--304
-
- []
-
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--371
+Underfull \hbox (badness 10000) in paragraph at lines 360--382
 
  []
 
 [15] [16]
-Overfull \hbox (5.25612pt too wide) in paragraph at lines 379--380
+Overfull \hbox (5.25612pt too wide) in paragraph at lines 390--391
 \OT1/cmr/m/n/10 Was be-schreibt ei-ne Ab-lei-tung? Die Ab-lei-tung be-schreibt das []Anderungsverhalten
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--405
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 413--416
 
  []
 
-[17] [18] [19] (./Übersicht.aux) ) 
+[18] [19] (./Übersicht.aux) ) 
 Here is how much of TeX's memory you used:
  4290 strings out of 478268
  71245 string characters out of 5846348
- 387164 words of memory out of 5000000
+ 387165 words of memory out of 5000000
  22447 multiletter control sequences out of 15000+600000
  478452 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,90p,1865b,242s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Übersicht.pdf (20 pages, 327536 bytes).
+Output written on Übersicht.pdf (20 pages, 330121 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
