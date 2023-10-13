@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  7 OCT 2023 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  13 OCT 2023 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -167,20 +167,20 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./Übersicht.aux)
 \openout1 = `Übersicht.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count277
@@ -211,206 +211,237 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
  [2]
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 45.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 46.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 45.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 46.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 52.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 52.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 53.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+Underfull \hbox (badness 10000) in paragraph at lines 73--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--82
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--90
+Underfull \hbox (badness 10000) in paragraph at lines 86--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
 
 [4]
-Underfull \hbox (badness 4608) in paragraph at lines 99--99
+Underfull \hbox (badness 4608) in paragraph at lines 100--100
 \OT1/cmr/m/n/8 8628034825 3421170679 8214808651 3282306647 0938446095 5058223172 5359408128
  []
 
 
-Underfull \hbox (badness 4608) in paragraph at lines 99--99
+Underfull \hbox (badness 4608) in paragraph at lines 100--100
 \OT1/cmr/m/n/8 4811174502 8410270193 8521105559 6446229489 5493038196 4428810975 6659334461
  []
 
 
-Underfull \hbox (badness 4608) in paragraph at lines 99--99
+Underfull \hbox (badness 4608) in paragraph at lines 100--100
 \OT1/cmr/m/n/8 2847564823 3786783165 2712019091 4564856692 3460348610 4543266482 1339360726
  []
 
 
-Underfull \hbox (badness 4608) in paragraph at lines 99--99
+Underfull \hbox (badness 4608) in paragraph at lines 100--100
 \OT1/cmr/m/n/8 0249141273 7245870066 0631558817 4881520920 9628292540 9171536436 7892590360
  []
 
 
-Underfull \hbox (badness 4608) in paragraph at lines 99--99
+Underfull \hbox (badness 4608) in paragraph at lines 100--100
 \OT1/cmr/m/n/8 0113305305 4882046652 1384146951 9415116094 3305727036 5759591953 0921861173
  []
 
 
-Overfull \hbox (11.51808pt too wide) in paragraph at lines 99--100
+Overfull \hbox (11.51808pt too wide) in paragraph at lines 100--101
 \OT1/cmr/m/n/10 3.1415926535.....damit be-ginnt die ir-ra-tio-na-le Zahl $\OML/cmm/m/it/10 ^^Y$[]\OT1/cmr/m/n/10 .Pi be-schreibt das Verh[]altnis
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 180--186
+Underfull \hbox (badness 10000) in paragraph at lines 181--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--186
+Underfull \hbox (badness 10000) in paragraph at lines 181--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--191
+Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 204--207
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 223--227
+<Bilder/Sinus_und_Kosinus_am_Einheitskreis_1.svg.png, id=51, 501.875pt x 501.875pt>
+File: Bilder/Sinus_und_Kosinus_am_Einheitskreis_1.svg.png Graphic file (type png)
+<use Bilder/Sinus_und_Kosinus_am_Einheitskreis_1.svg.png>
+Package pdftex.def Info: Bilder/Sinus_und_Kosinus_am_Einheitskreis_1.svg.png  used on input line 232.
+(pdftex.def)             Requested size: 160.60327pt x 160.60327pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
 
-Overfull \hbox (31.01135pt too wide) in paragraph at lines 223--227
-\OT1/cmr/m/n/10 Die Um-rech-nung ge-schieht fol-gen-der-ma-^^Yen: [] 
- []
-
-[9] [10] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 297--299
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 311--315
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+[9 <./Bilder/Sinus_und_Kosinus_am_Einheitskreis_1.svg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 255--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 259--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 259--264
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 275--279
+
+ []
+
+[11] [12] [13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 373--377
+
+ []
+
+[16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--382
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
 
  []
 
-[15] [16]
-Overfull \hbox (5.25612pt too wide) in paragraph at lines 390--391
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--444
+
+ []
+
+[18] [19]
+Overfull \hbox (5.25612pt too wide) in paragraph at lines 452--453
 \OT1/cmr/m/n/10 Was be-schreibt ei-ne Ab-lei-tung? Die Ab-lei-tung be-schreibt das []Anderungsverhalten
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 413--416
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--478
 
  []
 
-[18] [19] (./Übersicht.aux) ) 
+[20] [21] [22] (./Übersicht.aux) ) 
 Here is how much of TeX's memory you used:
- 4290 strings out of 478268
- 71245 string characters out of 5846348
- 387165 words of memory out of 5000000
- 22447 multiletter control sequences out of 15000+600000
+ 4301 strings out of 478268
+ 71684 string characters out of 5846348
+ 387193 words of memory out of 5000000
+ 22455 multiletter control sequences out of 15000+600000
  478452 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,90p,1865b,242s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,16n,90p,1865b,320s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Übersicht.pdf (20 pages, 330121 bytes).
+Output written on Übersicht.pdf (23 pages, 355577 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 193 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

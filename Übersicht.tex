@@ -6,7 +6,8 @@
 \usepackage[utf8]{inputenc}
 % Tables
 \usepackage{array}
-\graphicspath{{./Bilder/}}
+\usepackage{graphicx}
+\graphicspath{ {./Bilder/} }
 
 \author{Simon Roske}
 \title{Mathe Helfer}
@@ -142,16 +143,16 @@ Damit is e der Grenzwert (\ref{Der Grenzwert}) der (exponentiell) steigenden Zah
 \section{Grundlagen \& Rechengesetze}\label{Grundlegende Rechengesetze}
 Eine Verknüpfung lässt sich definieren als die Art und Weise wie 2 Objekte ein Drittes definieren. Die Verknüpfung wird abstrakt mit '$\circ$' ausgedrückt.
 
-\subsubsection{Kommutativgesetz}\label{Kommutativgesetz}
+\subsection{Kommutativgesetz}\label{Kommutativgesetz}
 Die Reihenfolge der Verknüpfung spielt keine Rolle, e.g. $2\circ 3=3 \circ 2$. 
 
-\subsubsection{Assoziativgesetz}\label{Assoziativgesetz}
+\subsection{Assoziativgesetz}\label{Assoziativgesetz}
 Die Verknüpfung dreier Zahlen hängt nicht davon ab, wie wir sie gruppieren, e.g. $(2 \circ 3) \circ 4 = 2 \circ (3 \circ 4)$. 
 
-\subsubsection{Distributivgesetz}\label{Distributivgesetz}
+\subsection{Distributivgesetz}\label{Distributivgesetz}
 Der Umgang mit Klammern hängt vom Zahlenraum und der Art der Verknüpfung ab. Für Addition sowie Multiplikation für die Zahlenmenge $\mathsf{R}$ seien beide Verknüpfungen distributiv, sodass gilt: $2\odot (3\oplus 4)=2\odot 3\oplus 2\odot 4$. \hfill \break
 
-\subsubsection{Die binomischen Formeln}
+\subsection{Die binomischen Formeln}
 \begin{enumerate}
     \item[1]: $(a+b)^2=a^2+2ab+b^2$
     \item[2] $(a-b)^2=a^2-2ab+b^2$
@@ -209,21 +210,82 @@ $\log_{10}(10)=1, \log_{10}(100)=2, \log_{10}(1000)=3$.
 \section{Geometrie}\label{Gemoetrie}
 
 
-\subsection{Phytagoras}\label{Phytagoras}
-$a^2+b^2=c^2$
-
 \subsection{Trignonometrie}\label{Trignonometrie}
-(A) $sin(\theta)=y/z \Leftrightarrow sin(\theta)=Gegenkahete/Hypothenuse$ \\
-(B) $cos(\theta)=x/z \Leftrightarrow cos(\theta)=Ankathete/Hypothenuse$ \\
-(C) $tan(\theta)=y/x \Leftrightarrow tan(\theta)= Gegenkahete/Ankathete$ \\
+Ein Einheitskreis ist definiert als ein Kreis mit radius 1. Das Interessante hierbei ist, dass sich die x- und y-Koordinate mithilfe von sinus und cosinus bestimmen lassen, abhängig vom Winkel. Man könnte auch sagen: 
+\skiptwolineswithcenteredexpr{$\cos(\theta) = \frac{x}{1}$}
+ und \skiptwolineswithcenteredexpr{$\sin(\theta) = \frac{y}{1}$}
+ Ist der $radius \neq 1$ spielt der Wert r eine Rolle da die Division mit einem anderen Wert x und y verschiebt. Schließlich gilt auch für den radius (oder die Hypothenuse):
+\skiptwolineswithcenteredexpr{$\tan(\theta) = \frac{y}{x}$.}
+Die gewöhnliche Definition von sinus, cosinus und tangens, die sich auf Dreiecke bezieht, ist sehr ähnlich und hat demenstprechend Gemeinsamkeiten, die sich darin finden lassen, dass wir diese Dreicke einfach in den Einheitskreis einsetzen (siehe Abbildung \ref{Einheitskreis_Bild}).
+\skiptwolines
+\begin{align*}
+    \sin(\theta) &= \frac{y}{z} = \frac{\text{Gegenkathete}}{\text{Hypothenuse}} \
+    \\
+    \cos(\theta) &= \frac{x}{z} = \frac{\text{Ankathete}}{\text{Hypothenuse}} \
+    \\
+    \tan(\theta) &= \frac{y}{x} = \frac{\text{Gegenkathete}}{\text{Ankathete}}
+    \label{Trignonometrische Formeln}
+    \end{align*}
+
+ \begin{figure}[h]
+    \begin{center}    
+        \includegraphics[scale=0.32]{Bilder/Sinus_und_Kosinus_am_Einheitskreis_1.svg.png}
+        \caption[short]{Einheitskreis von der Wikipedia Seite. Vom 13. Oktober, 2023.}
+    \end{center}
+    \label{Einheitskreis_Bild}
+\end{figure} \hfill \break
+Fassen wir zusammen: Die expliziten Formeln zeigen, dass \textbf{Sinus}, \textbf{Cosinus} und \textbf{Tangens} einen Winkel nutzen um das Verhältnis zweier zueinander liegender Seite zu bestimmen. Da für den Einheitskreis der Divident = 1 ist, bilden sinus und cosinus so den x- und y-Wert ab, gegeben die X- und Y-Achse ist so orientiert. Dieses Bild reflektiert sehr schön, warum folgendes gilt:
+\skiptwolines
+\begin{align*}
+    \sin(0) &= 0 \
+    \\
+    \cos(0) &= 1 \
+    \\
+    \sin(90) &= 1 \
+    \\
+    \cos(90) &= 0 \
+    \\
+    \sin(-\theta) &=  -\sin(\theta) \
+    \\
+    \cos(-\theta) &= \cos(\theta)
+\end{align*}
+Das ist auch der Grund, warum diese Funktionen (cos und sin) periodisch sind. Für Winkel $> 360$ kann man genauso gut Modulo rechnen und kommt wieder bei 0, bzw. 1 an.
+
 \subsection{Polarkoodinaten}\label{Polarkoodinaten}
-Mit \textit{r = z} folgt aus (C): $r*sin(\theta)=y$ und $r*cos(\theta)=x$ wobei r der radius in einem Polarkoordinatensystem ist. Da sich r aus dem Term herauskürzen lässt, erhalten wir $tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$. Einfach formuliert beudetet dieser Zusammenhang folgendes: Über den Winkel $\theta$ kannst du mit $\tan(\theta)$ das Verhältnis $y:x$ berechnen. Außerdem können wir den Winkel $\theta$ mit der inversen zu $\tan$, $\sin$  und $\cos$ berechenen. $f^-1 \equiv \tan^-1(\theta)$ übersetzt sich zu $\arctan(\theta)$, woraus folgt: $\tan^-1(Gegenkahete/Ankathete)=\theta.\footnote{$\theta$ is in radian.}$
+In Polarkoordinaten wird ein Punkt durch Angabe des Abstands r zum Koordinatenursprung und durch einen Winkel $\theta$ (auch Azimut genannt) bezüglich einer vorgegebenen Achse (z.B. der X-Achse) beschrieben. Das Zahlenpaar $(r,\theta)$ wird als Polarkoordinaten des Punktes bezeichnet. Umrechnen lassen sich die Koordinaten in das andere System wiefolgt:
+\skiptwolines
+Von Polarkoodinaten in kartesische Koordinaten:
+\skiptwolineswithcenteredexpr{$x = r\cdot \cos(\theta)$ and $y = r\cdot \sin(\theta)$}
+Von kartesischen Koordinaten in Polarkoordinaten:
+\skiptwolines
+Hier müssen wir zwei Dinge bestimmen. Der radius ist mittels Phytagoras gegeben, i.e. $r = \sqrt{x^2+y^2}$.  Ist der radius = 0, sind alle möglichen $\theta$ mögliche, daher gilt als (praktische) Lösung $\theta = 0$.
+\skiptwolines
+Außerdem sollte der der Wertebereichs des Winkels mit einem haloffenen Intervall gegeben sein, damit die Transformation eindeutig ist, i.e. $[0,2\pi)$. Der Winkel $\theta$ muss nach unterschiedlichen Fällen behandelt werden:    
+\begin{align*}
+        x > 0, y \geq 0: \theta = \arctan(\frac{y}{x}) \\
+        \\
+        x > 0, y < 0: \theta = \arctan(\frac{y}{x}) + 2 \pi \\
+        \\
+        x <0: \theta = \arctan(\frac{y}{x}) + \pi \\
+        \\ 
+        x = 0, y > 0: \theta = 90 \deg \\
+        \\
+        x = 0, y < 0: \theta = 270
+        \\
+\end{align*}
+An dieser Stelle sei eine Besonderheit genannt. Wir wissen, dass für die Umrechnung $f_{P\rightarrow CK} = r*sin(\theta)=y, r*cos(\theta)=x$. Da sich r aus der Formel für den Tangens herauskürzen lässt, erhalten wir $tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$. Anders formuliert beudetet das folgendes: Über den Winkel $\theta$ lässt sich mit $\tan(\theta)$ das Verhältnis $y:x$ berechnen. Daher können wir den Winkel $\theta$ mit der inversen zu berechenen. $f^{-1} \equiv \tan^{-1}(\frac{y}{x})$ übersetzt sich zu $\arctan(\frac{y}{x})$, woraus folgt: $\arctan(Gegenkahete/Ankathete)=\theta.\footnote{$\theta$ is in radian.}$
+\skiptwolines
+Werden Kreiskoordinaten mit einer dritten Koordinate ergänzt, ergeben sich räumliche Polarkoordinaten, wie z. B. Kugelkoordinaten oder Zylinderkoordinaten.
+\subsubsection{Komplexe Zahlen mittels Polarkoodinaten}
+$z \in \mathsf{C} = a + b\cdot i \equiv z = \vert z \vert \cdot e^{i\theta} = \vert z \vert (\cos(\theta) + i \cdot \sin(\theta)) = \vert z \vert \cdot \cos(\theta) + \vert z \vert \cdot i \cdot \sin(\theta)$
 
 \subsection{Bogenmaß und Radian}\label{Bogenmaß und Radian}
-Meistens werden Winkel in Grad angegeben. Aber ein Winkel von $45\deg$ kann auch im Bogenmaß, $\frac{1}{4}\pi \approx 0,79$, angegeben werden. Es gilt: $360\deg = 2\pi$, $1\pi = 180\deg$ und daher $1,5\pi = 270\deg$. Zu jedem Mittelpunktswinkel am Einheitskreis gehört ein Kreisbogen auf dem Einheitskreis. Die Länge des Kreisbogens ist ein Maß für die Größe des Winkels. Dieses wird als Bogenmaß bezeichnet und trägt die Einheit \textit{Radiant}, abgekürzt \textit{rad}. 
-\newline
-\newline
-Die Umrechnung geschieht folgendermaßen: \framebox{$rad=\frac{\deg}{180\deg}*\pi$ und $\deg=\frac{rad}{\pi}*180\deg$}% ##############################
+Meistens werden Winkel in Grad angegeben. Aber ein Winkel von  bsp. 45 Grad kann auch in Bogenmaß ($\frac{1}{4}\pi \approx 0,79$) angegeben werden. Es gilt: $360\deg = 2\pi$, $1\pi = 180\deg$ und $1,5\pi = 270\deg$. Zu jedem Mittelpunktswinkel am Einheitskreis gehört ein Kreisbogen auf dem Einheitskreis. Die Länge des Kreisbogens ist ein Maß für die Größe des Winkels. Dieses wird als Bogenmaß bezeichnet und trägt die Einheit \textit{Radiant}, abgekürzt \textit{rad}. 
+\begin{center}
+    \framebox{$rad=\frac{\deg}{180\deg}*\pi$ und $\deg=\frac{rad}{\pi}*180\deg$}
+\end{center}
+\subsection{Phytagoras}\label{Phytagoras}
+$a^2+b^2=c^2$
 
 
 \section{Statistik}\label{Statistik}

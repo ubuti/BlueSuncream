@@ -10,61 +10,62 @@
 \contentsline {subsubsection}{\numberline {1.6.2}$e$ - Euler's Zahl}{5}{}%
 \contentsline {subsubsection}{\numberline {1.6.3}i - die imaginäre Zahl}{6}{}%
 \contentsline {section}{\numberline {2}Grundlagen \& Rechengesetze}{6}{}%
-\contentsline {subsubsection}{\numberline {2.0.1}Kommutativgesetz}{6}{}%
-\contentsline {subsubsection}{\numberline {2.0.2}Assoziativgesetz}{6}{}%
-\contentsline {subsubsection}{\numberline {2.0.3}Distributivgesetz}{6}{}%
-\contentsline {subsubsection}{\numberline {2.0.4}Die binomischen Formeln}{6}{}%
-\contentsline {subsection}{\numberline {2.1}Potenzen}{7}{}%
-\contentsline {subsection}{\numberline {2.2}Wurzeln}{7}{}%
-\contentsline {subsection}{\numberline {2.3}Logarithmus}{7}{}%
+\contentsline {subsection}{\numberline {2.1}Kommutativgesetz}{6}{}%
+\contentsline {subsection}{\numberline {2.2}Assoziativgesetz}{6}{}%
+\contentsline {subsection}{\numberline {2.3}Distributivgesetz}{6}{}%
+\contentsline {subsection}{\numberline {2.4}Die binomischen Formeln}{6}{}%
+\contentsline {subsection}{\numberline {2.5}Potenzen}{7}{}%
+\contentsline {subsection}{\numberline {2.6}Wurzeln}{7}{}%
+\contentsline {subsection}{\numberline {2.7}Logarithmus}{7}{}%
 \contentsline {section}{\numberline {3}Geometrie}{8}{}%
-\contentsline {subsection}{\numberline {3.1}Phytagoras}{8}{}%
-\contentsline {subsection}{\numberline {3.2}Trignonometrie}{8}{}%
-\contentsline {subsection}{\numberline {3.3}Polarkoodinaten}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Bogenmaß und Radian}{9}{}%
-\contentsline {section}{\numberline {4}Statistik}{9}{}%
-\contentsline {subsection}{\numberline {4.1}Statistische konzepte}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Durchschnitt, modus, median}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Varianz und Abweichung}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.3}Abhängige und unabhängige Variable}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.4}Korrelation}{9}{}%
-\contentsline {subsection}{\numberline {4.2}Statistische verfahren}{9}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Pearson's chi-square test}{9}{}%
-\contentsline {section}{\numberline {5}Wahrscheinlichkeit}{9}{}%
-\contentsline {subsection}{\numberline {5.1}Kolmogorow' Axiome}{9}{}%
-\contentsline {subsection}{\numberline {5.2}Wahrscheinlichkeitskonzepte}{10}{}%
-\contentsline {subsection}{\numberline {5.3}Wahrscheinlichkeitsverteilungen}{10}{}%
-\contentsline {subsubsection}{\numberline {5.3.1}Normalverteilung}{11}{}%
-\contentsline {subsubsection}{\numberline {5.3.2}Exponentialverteilung}{11}{}%
-\contentsline {subsubsection}{\numberline {5.3.3}Gleichverteilung}{12}{}%
-\contentsline {subsubsection}{\numberline {5.3.4}Poissonverteilung}{12}{}%
-\contentsline {subsubsection}{\numberline {5.3.5}t-Verteilung oder Student-t-Verteilung}{13}{}%
-\contentsline {subsubsection}{\numberline {5.3.6}\textbf {$Chi^2$} Verteilung}{13}{}%
-\contentsline {subsubsection}{\numberline {5.3.7}Binominalverteilung}{13}{}%
-\contentsline {subsubsection}{\numberline {5.3.8}Bernoulliverteilung}{14}{}%
-\contentsline {subsection}{\numberline {5.4}Bayes}{14}{}%
-\contentsline {section}{\numberline {6}Algebra}{14}{}%
-\contentsline {subsection}{\numberline {6.1}Determinante}{15}{}%
-\contentsline {section}{\numberline {7}Analysis}{15}{}%
-\contentsline {subsection}{\numberline {7.1}Funktionen/Abbildungen}{15}{}%
-\contentsline {subsubsection}{\numberline {7.1.1}Definitionsbereich und Wertebereich}{15}{}%
-\contentsline {subsubsection}{\numberline {7.1.2}Spezielle Funktionen}{15}{}%
-\contentsline {subsubsection}{\numberline {7.1.3}Inversibilität}{17}{}%
-\contentsline {subsubsection}{\numberline {7.1.4}Nullstellen}{17}{}%
-\contentsline {subsection}{\numberline {7.2}Ableitungen}{17}{}%
-\contentsline {subsubsection}{\numberline {7.2.1}Spezielle Ableitungen}{17}{}%
-\contentsline {subsubsection}{\numberline {7.2.2}Ableitungsregeln}{18}{}%
-\contentsline {subsubsection}{\numberline {7.2.3}Partielle Ableitungen $\partial $}{18}{}%
-\contentsline {subsection}{\numberline {7.3}Polynome}{18}{}%
-\contentsline {subsection}{\numberline {7.4}Integrale}{18}{}%
-\contentsline {subsection}{\numberline {7.5}Der Grenzwert}{18}{}%
-\contentsline {subsection}{\numberline {7.6}Differentialgleichungen}{18}{}%
-\contentsline {subsection}{\numberline {7.7}Divergenz}{19}{}%
-\contentsline {subsubsection}{\numberline {7.7.1}Kullback-Leibler}{19}{}%
-\contentsline {subsubsection}{\numberline {7.7.2}Jensen-Shannon}{19}{}%
-\contentsline {subsection}{\numberline {7.8}Lösungstrategien}{19}{}%
-\contentsline {subsection}{\numberline {7.9}Regression}{19}{}%
-\contentsline {subsubsection}{\numberline {7.9.1}Lineare Regression}{19}{}%
-\contentsline {subsubsection}{\numberline {7.9.2}Polynomilae Regression}{19}{}%
-\contentsline {subsubsection}{\numberline {7.9.3}Logistische Regression}{19}{}%
-\contentsline {section}{\numberline {8}Modellierung}{19}{}%
+\contentsline {subsection}{\numberline {3.1}Trignonometrie}{8}{}%
+\contentsline {subsection}{\numberline {3.2}Polarkoodinaten}{10}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Komplexe Zahlen mittels Polarkoodinaten}{11}{}%
+\contentsline {subsection}{\numberline {3.3}Bogenmaß und Radian}{11}{}%
+\contentsline {subsection}{\numberline {3.4}Phytagoras}{12}{}%
+\contentsline {section}{\numberline {4}Statistik}{12}{}%
+\contentsline {subsection}{\numberline {4.1}Statistische konzepte}{12}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Durchschnitt, modus, median}{12}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Varianz und Abweichung}{12}{}%
+\contentsline {subsubsection}{\numberline {4.1.3}Abhängige und unabhängige Variable}{12}{}%
+\contentsline {subsubsection}{\numberline {4.1.4}Korrelation}{12}{}%
+\contentsline {subsection}{\numberline {4.2}Statistische verfahren}{12}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Pearson's chi-square test}{12}{}%
+\contentsline {section}{\numberline {5}Wahrscheinlichkeit}{12}{}%
+\contentsline {subsection}{\numberline {5.1}Kolmogorow' Axiome}{12}{}%
+\contentsline {subsection}{\numberline {5.2}Wahrscheinlichkeitskonzepte}{12}{}%
+\contentsline {subsection}{\numberline {5.3}Wahrscheinlichkeitsverteilungen}{13}{}%
+\contentsline {subsubsection}{\numberline {5.3.1}Normalverteilung}{13}{}%
+\contentsline {subsubsection}{\numberline {5.3.2}Exponentialverteilung}{14}{}%
+\contentsline {subsubsection}{\numberline {5.3.3}Gleichverteilung}{14}{}%
+\contentsline {subsubsection}{\numberline {5.3.4}Poissonverteilung}{15}{}%
+\contentsline {subsubsection}{\numberline {5.3.5}t-Verteilung oder Student-t-Verteilung}{15}{}%
+\contentsline {subsubsection}{\numberline {5.3.6}\textbf {$Chi^2$} Verteilung}{16}{}%
+\contentsline {subsubsection}{\numberline {5.3.7}Binominalverteilung}{16}{}%
+\contentsline {subsubsection}{\numberline {5.3.8}Bernoulliverteilung}{17}{}%
+\contentsline {subsection}{\numberline {5.4}Bayes}{17}{}%
+\contentsline {section}{\numberline {6}Algebra}{17}{}%
+\contentsline {subsection}{\numberline {6.1}Determinante}{18}{}%
+\contentsline {section}{\numberline {7}Analysis}{18}{}%
+\contentsline {subsection}{\numberline {7.1}Funktionen/Abbildungen}{18}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}Definitionsbereich und Wertebereich}{18}{}%
+\contentsline {subsubsection}{\numberline {7.1.2}Spezielle Funktionen}{18}{}%
+\contentsline {subsubsection}{\numberline {7.1.3}Inversibilität}{19}{}%
+\contentsline {subsubsection}{\numberline {7.1.4}Nullstellen}{20}{}%
+\contentsline {subsection}{\numberline {7.2}Ableitungen}{20}{}%
+\contentsline {subsubsection}{\numberline {7.2.1}Spezielle Ableitungen}{20}{}%
+\contentsline {subsubsection}{\numberline {7.2.2}Ableitungsregeln}{20}{}%
+\contentsline {subsubsection}{\numberline {7.2.3}Partielle Ableitungen $\partial $}{21}{}%
+\contentsline {subsection}{\numberline {7.3}Polynome}{21}{}%
+\contentsline {subsection}{\numberline {7.4}Integrale}{21}{}%
+\contentsline {subsection}{\numberline {7.5}Der Grenzwert}{21}{}%
+\contentsline {subsection}{\numberline {7.6}Differentialgleichungen}{21}{}%
+\contentsline {subsection}{\numberline {7.7}Divergenz}{21}{}%
+\contentsline {subsubsection}{\numberline {7.7.1}Kullback-Leibler}{21}{}%
+\contentsline {subsubsection}{\numberline {7.7.2}Jensen-Shannon}{22}{}%
+\contentsline {subsection}{\numberline {7.8}Lösungstrategien}{22}{}%
+\contentsline {subsection}{\numberline {7.9}Regression}{22}{}%
+\contentsline {subsubsection}{\numberline {7.9.1}Lineare Regression}{22}{}%
+\contentsline {subsubsection}{\numberline {7.9.2}Polynomilae Regression}{22}{}%
+\contentsline {subsubsection}{\numberline {7.9.3}Logistische Regression}{22}{}%
+\contentsline {section}{\numberline {8}Modellierung}{22}{}%
