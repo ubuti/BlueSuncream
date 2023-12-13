@@ -287,27 +287,40 @@ Meistens werden Winkel in Grad angegeben. Aber ein Winkel von  bsp. 45 Grad kann
 \subsection{Phytagoras}\label{Phytagoras}
 $a^2+b^2=c^2$
 
-
 \section{Statistik}\label{Statistik}
 
+\subsection{Durchschnitt}\label{Durchschnitt}
+Gibt es eine endliche Datenmenge $D$, die aus Stichproben der Form $x\sim P_X$ besteht, ist der Durchschnitt der arithmetische Mittelwert:
+$$\bar{x} := \frac{1}{|D|}\sum_{x\in D} x$$
+Der Durchschnitt ist also ein Schätzwert für den unbekannten Erwartungswert einer Verteilung von dem die Stichproben kommen.
+\subsection{Modus}\label{Modus}
+Das am häufigsten vorkommende Element einer Datenmege:
+$$ Modus(D) = {1,2,3,6,7,8,3,2,2} = 2$$
+\subsection{Median}\label{Median}
+Jenes Element einer Datenmenge, zu dem jeweils 50\% größer und 50\% kleiner sind:
+$$ Median(D) = {1,2,3,4,5,6,7} = 4$$
+\subsection{Erwartungswert}\label{Erwartungswert}
+Der Erwartungswert ist der förmliche Begriff für den Durschnitt einer Variablen, mit dem Unterschied, das der Erwartungswert prinzipiell ins Unendliche geht. Ausgedrückt wird das mit:
+$$E[X] := \mu_X := \int_{x\in\Omega} x dP_X(x)$$  
 
-\subsection{Statistische konzepte}\label{Statistische konzepte}
+\subsection{Varianz}\label{Varianz}
+Die Varianz misst die erwartete Abweichung einer Variablen vom Erwartungswert. Mit der euklidischen Distanzt als Metrik (hoch 2) ergibt sich folgende Formel:
+$$Var(X) = E[(X-E[X])^2]$$
 
-\subsubsection{Durchschnitt, modus, median}\label{Durchschnitt, modus, median}
+\subsection{Standardabweichung}\label{Standardabweichung}
+Die Standardabweichung ist die Wurzel der Varianz. Sie ist stets angegeben in der selber Größe wie das zu messende Merkmal.
+$$\sigma = \sqrt[2]{Var(X)}$$
 
-\subsubsection{Varianz und Abweichung}\label{Varianz und Abweichung}
+\subsection{Korrelation}\label{Korrelation}
 
-\subsubsection{Abhängige und unabhängige Variable}\label{Abhängige und unabhängige Variable}
 
-\subsubsection{Korrelation}\label{Korrelation}
 
-\subsection{Statistische verfahren}\label{Statistische verfahren}
-
-\subsubsection{Pearson's chi-square test}\label{Pearson's chi-square test}
+\subsection{Pearson's chi-square test}\label{Pearson's chi-square test}
 
 
 \section{Wahrscheinlichkeit}\label{Wahrscheinlichkeit}
 
+\subsection{Abhängige und unabhängige Variable}\label{Abhängige und unabhängige Variable}
 
 \subsection{Kolmogorow' Axiome}\label{Kolmogorow's Axiome}
 Kolmogorow's drei Axiome - so heißen die Grundsätze einer Theorie - sind die bekannteste Beschreibung der grundlegenden Eigenschaften der Wahrscheinlichkeitsrechnung. Seien $\Omega={\omega_1, \omega_2, \omega_3, \omega_4, \omega_5, \omega_6}$ die Ergebnismenge eines Zufallsexperiments, A und B Teilmengen von $\Omega$ und P eine Funktion, die jedem A eine reelle Zahl zwischen 0 und 1 zuordnet. P(A) wird Wahrscheinlichkeit genannt, falls folgende drei Bedingungen (Axiome) erfüllt werden:

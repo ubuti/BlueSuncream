@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1697204664 "/Users/inuit/Documents/Studien/MatheHelfer/Übersicht.tex" "Übersicht.pdf" "Übersicht" 1697204665
-  "/Users/inuit/Documents/Studien/MatheHelfer/Übersicht.tex" 1697204664 44215 624b84575a286008ee0978bb867bbaf9 ""
+["pdflatex"] 1701953217 "/Users/inuit/Documents/Studien/MatheHelfer/Übersicht.tex" "Übersicht.pdf" "Übersicht" 1701953218
+  "/Users/inuit/Documents/Studien/MatheHelfer/Übersicht.tex" 1701953216 45288 3dd779e56650446c17523daa2ab8f425 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -87,10 +87,10 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1677690461 2826437 c274ce109128b3265f30a897da3cb209 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "Bilder/Sinus_und_Kosinus_am_Einheitskreis_1.svg.png" 1697195211 26670 6a6ce89f4fecd6ff6fd85911b0a5e594 ""
-  "Übersicht.aux" 1697204665 11053 23f7164fb0ee06e637b4d6a63b58d7be "pdflatex"
-  "Übersicht.lof" 1697204665 97 e2bee9da260e742156dbc0006cce08f2 "pdflatex"
-  "Übersicht.tex" 1697204664 44215 624b84575a286008ee0978bb867bbaf9 ""
-  "Übersicht.toc" 1697204665 5195 f4aebc3333d9ef849af476fe1cda1ebf "pdflatex"
+  "Übersicht.aux" 1701953218 11192 79b556a4992a018fb1d1ff9801e718dc "pdflatex"
+  "Übersicht.lof" 1701953218 97 e2bee9da260e742156dbc0006cce08f2 "pdflatex"
+  "Übersicht.tex" 1701953216 45288 3dd779e56650446c17523daa2ab8f425 ""
+  "Übersicht.toc" 1701953218 5246 89881e4a45f9e82b18c37f01bb1c593d "pdflatex"
   (generated)
   "Übersicht.aux"
   "Übersicht.lof"
