@@ -1,20 +1,70 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt]{report}
 
-% Pakete
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
-\usepackage{setspace}
-\usepackage{color}
-\usepackage{hyperref}
-\usepackage{titlesec}
+% Packages to handle math, references, spacing, etc.
+\usepackage{amsmath}  % For math equations
+\usepackage{amsfonts} % For more fonts
+\usepackage{amssymb}  % For more symbols
+\usepackage{hyperref} % For hyperlinks
+\usepackage{graphicx} % For handling figures
+\usepackage{fancyhdr} % For custom headers
+\usepackage{geometry} % For page margins and space control
+\usepackage{titlesec} % For custom section titles
 
-% Zeilenabstand
-\onehalfspacing
+% Page setup
+\geometry{top=5mm, bottom=5mm, left=8mm, right=8mm}  % 3mm margins on all sides
+\pagestyle{fancy}  % Enable fancy headers
+\fancyhf{} % Clear header and footer
+\fancyhead[L]{Mathematics Cheat Sheet} % Header text on left
+\fancyfoot[C]{\thepage} % Page number centered at the bottom
 
-% Überschriftenformatierung
-\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+% Adjust section and chapter font size
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter}{2em}{}
+\titleformat{\section}[hang]{\normalfont\LARGE\bfseries}{\thesection}{2em}{}
+\titleformat{\subsection}[hang]{\normalfont\Large\bfseries}{\thesubsection}{2em}{}
 
-% Hervorhebungen
-\newcommand{\highlight}[1]{\textcolor{red}{#1}}
+% No identation
+\setlength{\parindent}{0pt}
+
+% Custom space for equations: 4mm above and below equations
+\newcommand{\spacedequation}[1]{\vspace{4mm}\begin{equation} #1 \end{equation}\vspace{4mm}}
+
+% Chapter and section handling
+% \titleclass{\chapter}{standard} % Ensure chapters are on a new page
+\newcommand{\chapterbreak}{\newpage} % Force new page at the start of each chapter
+
+% Hyperlinking for sections, subsections, equations, etc.
+\hypersetup{
+    colorlinks=true,  % Enable colored links
+    linkcolor=blue,   % Set color of links
+    urlcolor=blue,    % Set color of URLs
+    pdftitle={Mathematics Cheat Sheet}, % PDF metadata
+    pdfauthor={Simon F. Roske} % Author name
+}
+
+% Make sure figures do not overlap and fit to page
+\setlength{\textfloatsep}{10pt plus 1.0pt minus 2.0pt} % Space for floats (figures, tables)
+\setlength{\floatsep}{10pt plus 1.0pt minus 2.0pt}    % Space between floats
+\setlength{\intextsep}{10pt plus 1.0pt minus 2.0pt}    % Space above/below in-text floats
+
+% Ensure figures are sized properly
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}  % Supported file types for figures
+\graphicspath{{./figures/}}  % Default path for figures
+
+\begin{document}
+
+\title{Mathematics Cheat Sheet}
+\author{Friend}
+\date{\today}
+\maketitle
+
+% Input chapters
+\input{Numbers.tex}
+\input{Introduction.tex} 
+\input{Probability.tex}
+\input{Statistic.tex}
+\input{Geometry.tex}
+\input{Linear Algebra.tex}
+\input{Analysis.tex}
+\input{Machine Learning.tex}
+
+\end{document}

@@ -1,15 +1,19 @@
 # BlueSuncream
-Eine Ausarbeitung mathematischer Konzepte für den Unibereich im Stil eines 'Cheatsheets'. Orientiert sich stark an praktischer Anwendung und weniger an Hintergrundwissen oder Erklärungen. Enthält auch weitergehende statistische Konzepte wie die Anwendung von Modellen und deren Evaluation.
-Folgende Kapitel sind und sollen vorhanden sein.
-- Zahlen (Alle Arten von Zahlen)
-- Grundlagen & Rechengestze (Log, Wurzel, Potenzen, etc.)
-- Geometrie
-- Statistik
-- Wahrscheinlichkeitsrechnung
-- Algebra (Vektoren, Matrizen, Determinante, Rechengestze)
-- Analysis (Reihen/Folgen, Integrale, Ableitung Fourier)
-- Modelle
-
-Es wird keine Garantie für die Richtigkeit der Inhalte übernommen. Es handelt sich in erster Linie um eine Hilfe für die Eigenverwendung. Nutzung auf eigene Risiken!
 
 
+## Mathematical Concepts Cheat Sheet for University
+
+This cheat sheet focuses on practical applications rather than background knowledge or detailed explanations - a quick look up and recall sort of document. 
+
+It also covers more advanced concepts, including machine learning, model applications and their evaluation among others. You can click the links below to jump to the desired chapter. 
+
+- Numbers
+- Basics & Arithmetic Rules (Logarithms, Roots, Powers, etc.)
+- Probability Theory
+- Statistics
+- Geometry
+- Algebra (Vectors, Matrices, Determinants, Arithmetic Rules)
+- Analysis (Sequences/Series, Integrals, Derivatives, Fourier)
+- Machine Learning
+
+No guarantee for the accuracy of the content is provided. This is primarily a resource for personal use. Use at your own risk!

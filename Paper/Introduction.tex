@@ -1,0 +1,133 @@
+\chapter{Fundamentals \& Arithmetic Laws}\label{Fundamental Arithmetic Laws}
+
+A binary operation can be defined as a way in which two objects determine a third. The operation is abstractly expressed with '$\circ$'. The \textbf{law of closure states} that the result of an operation on two elements of a set is also an element of that set. That allows to define operations such as \textit{addition} and \textit{multiplication}.
+Depending on the \textbf{algebraic structure}, operations differ in outcome (e.g. $1 +1 \neq 2 \in \mathbb{F}_{2} = {0,1}$). 
+Although operations may yield different outcomes, axioms are fundamental and true for most structures. \textit{Note:} Having to prove a certain law holds for a specific case is often required during exercises in analysis.
+
+\section{Axioms}\label{Axioms}
+Axioms establish that algebraic structures have operations (addition and multiplication), and that these operations behave in specific, predictable ways. The most fundamental laws that apply to \textbf{most} structures are:
+See this \href{https://math.libretexts.org/Bookshelves/Analysis/Mathematical_Analysis_(Zakon)/02%3A_Real_Numbers_and_Fields/2.01%3A_Axioms_and_Basic_Definitions}{article} for more information.
+
+\subsection{Commutative Law}\label{Commutative Law}
+
+The order of the operation does not matter, e.g., 
+\spacedequation{2 \circ 3 = 3 \circ 2}.
+
+\subsection{Associative Law}\label{Associative Law}
+
+The grouping of three numbers does not affect the result of the operation, e.g., 
+\spacedequation{(2 \circ 3) \circ 4 = 2 \circ (3 \circ 4)}.
+
+\subsection{Distributive Law}\label{Distributive Law}
+
+The handling of parentheses depends on the number set and the type of operation. For addition and multiplication in the set of real numbers $\mathbb{R}$, both operations are distributive. Thus, 
+\spacedequation{2 \odot (3 \oplus 4) = 2 \odot 3 \oplus 2 \odot 4}.
+
+\subsection{Inequality Laws}\label{Inequality Laws}
+
+Inequalities change depending on the operation:
+\begin{itemize} \item Adding/subtracting a constant: \spacedequation{a > b \Rightarrow a + c > b + c} \item Multiplying by a positive constant: \spacedequation{a > b \Rightarrow a \cdot c > b \cdot c} \item Multiplying by a negative constant reverses the inequality: \spacedequation{a > b \Rightarrow a \cdot (-c) < b \cdot (-c)} \end{itemize}
+
+\subsection{Identity Laws}\label{Identity Laws}
+
+These laws describe the neutral element in an operation:
+\begin{itemize} \item For addition: \spacedequation{a + 0 = a} \item For multiplication: \spacedequation{a \cdot 1 = a} \end{itemize}
+
+\subsection{Inverse Laws}\label{Inverse Laws}
+
+These laws describe how to reverse an operation:
+\begin{itemize} \item For addition: \spacedequation{a + (-a) = 0} \item For multiplication: \spacedequation{a \cdot a^{-1} = 1,} where 
+$a{-1} = \frac{1}{a}$ and $a \neq 0$
+\end{itemize}
+
+\subsection{Zero Laws}\label{Zero Laws}
+
+The number zero has special properties:
+\spacedequation{a \cdot 0 = 0} 
+Division by zero is undefined.
+
+
+\subsection{Absolute Value Properties}\label{Absolute Value Properties}
+
+The absolute value represents the distance from zero:
+\begin{itemize} \item \spacedequation{|a| \geq 0} \item \spacedequation{|a| = a} \item \spacedequation{|a \cdot b| = |a| \cdot |b|.} \end{itemize}
+
+\section{The Binomial Formulas}\label{Binomial Formulas}
+
+\begin{enumerate}
+    \item[(a)] \spacedequation{(a + b)^2 = a^2 + 2ab + b^2}
+    \item[(b)] \spacedequation{(a - b)^2 = a^2 - 2ab + b^2}
+    \item[(c)] \spacedequation{(a + b) \cdot (a - b) = a^2 - b^2}
+\end{enumerate}
+
+\section{Set Operations}\label{Set Operations}
+
+In set operations, the following laws hold:
+\begin{itemize} \item Commutative: \spacedequation{A \cup B = B \cup A} \spacedequation{A \cap B = B \cap A} \item Associative: \spacedequation{(A \cup B) \cup C = A \cup (B \cup C)} \spacedequation{(A \cap B) \cap C = A \cap (B \cap C)} \item Distributive: \spacedequation{A \cap (B \cup C) = (A \cap B) \cup (A \cap C)} \end{itemize}
+
+\section{Powers}\label{Powers}
+
+A power is a shorthand notation for repeated multiplication by itself.
+
+\begin{itemize}
+    \item \spacedequation{a^0 = 1}
+    \item \spacedequation{a^1 = a}
+    \item \spacedequation{a^{-1} = \frac{1}{a}}
+    \item \spacedequation{a^{-n} = \frac{1}{a^n}}
+    \item \spacedequation{a^n = \frac{1}{a^{-n}}}
+    \item \spacedequation{a^p \cdot a^q = a^{p+q}}
+    \item \spacedequation{a^p : a^q = a^{p-q}}
+    \item \spacedequation{a^q \cdot b^q = (a \cdot b)^q}
+    \item \spacedequation{a^q : b^q = (a : b)^q}
+    \item \spacedequation{(a^p)^q = a^{p \cdot q}}
+    \item \spacedequation{\frac{a^m}{a^n} = a^{m-n}}
+    \item \spacedequation{\frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n}
+    \item \spacedequation{\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n}
+\end{itemize}
+
+Building on the basic exponent rules, we have: \begin{itemize} \item \spacedequation{(a \cdot b)^n = a^n \cdot b^n} \item \spacedequation{\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}} \end{itemize}
+
+\section{Roots}\label{Roots}
+
+The root of a number, when multiplied by itself, gives the number. By default, this refers to square roots, but higher roots (e.g., cubic roots $\sqrt[3]{x}$) are also possible. In terms of powers, the square root is expressed as 
+\spacedequation{\sqrt{x} = x^{\frac{1}{2}}} 
+and 
+\spacedequation{\sqrt[n]{x} = x^{\frac{1}{n}}} 
+e.g.
+\spacedequation{\sqrt[3]{125} = 125^{\frac{1}{3}}.}
+If a power has a solution, then 
+\spacedequation{x^n = a \Leftrightarrow x = \sqrt[n]{a}}
+as in 
+\spacedequation{3^4 = 81 \equiv \sqrt[4]{81} = 3.}
+
+Roots also follow these additional rules: \begin{itemize} \item Nested roots: \spacedequation{\sqrt[m]{\sqrt[n]{a}} = \sqrt[m \cdot n]{a}} \item For products: \spacedequation{\sqrt[m]{a \cdot b} = \sqrt[m]{a} \cdot \sqrt[m]{b}} \end{itemize}
+
+\textit{Note:} The nth root is the inverse function of the power function $x^n$.
+
+\section{Logarithms}\label{Logarithms}
+
+\textbf{Question:} What number must I raise \( a \) to, to get \( y \)? Written as 
+\spacedequation{\log_a(x) = y.}
+\textit{Note:} The logarithms of zero and negative numbers are not defined!
+
+The logarithm is the inverse function of the exponential function:
+
+\spacedequation{f(x) = a^x = y, \quad f^{-1}(y) = \log_a(y) = x.}
+
+Thus, the logarithm provides the exponent of the exponential function to the base \( a \). For the exponential function \( f(x) = e^x \) with \( e \) as the base, the natural logarithm (\(\ln\)) is defined as 
+\spacedequation{f^{-1}}.
+
+Logarithms have specific rules:
+\begin{itemize}
+    \item \spacedequation{\log_a(1) = 0}
+    \item \spacedequation{\log_a(a) = 1}
+    \item \spacedequation{\log_a(p \cdot q) = \log_a(p) + \log_a(q)}
+    \item \spacedequation{\log_a\left(\frac{p}{q}\right) = \log_a(p) - \log_a(q)}
+    \item \spacedequation{\log_a(p^q) = q \cdot \log_a(p)}
+    \item \spacedequation{\log_a\left(\sqrt[n]{p}\right) = \frac{\log_a(p)}{n}}
+    \item \spacedequation{\log_a(p) = \frac{\log_b(p)}{\log_b(a)}}
+\end{itemize}
+
+These additional rules expand on logarithmic behavior: \begin{itemize} \item Change of base: \spacedequation{\log_b(a) = \frac{\ln(a)}{\ln(b)}} \item Reciprocal property: \spacedequation{\log_a\left(\frac{1}{b}\right) = -\log_a(b)} \end{itemize}
+
+Logarithmic scaling is helpful when data varies significantly or when relative differences between values are important. Logarithmic scaling makes patterns easier to discern.
