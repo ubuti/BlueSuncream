@@ -1,16 +1,34 @@
 \documentclass[letterpaper, titlepage]{article}
 
-\usepackage[export]{adjustbox}
+% For writing math content
 \usepackage{amsmath}
+
+% For adjusting box sizes: adjustbox
+\usepackage[export]{adjustbox}
+% For German language support: babel
 \usepackage[ngerman]{babel}
+% For input encoding: inputenc
 \usepackage[utf8]{inputenc}
-% Tables
+% For tables: array
 \usepackage{array}
+% For including graphics: graphicx
 \usepackage{graphicx}
 \graphicspath{ {./Bilder/} }
 
 \author{Simon Roske}
 \title{Mathe Helfer}
+
+% Load hyperref last
+\usepackage{hyperref}
+% Spacing between paragraphs
+\usepackage{setspace}
+
+% For \mathbb etc
+\usepackage{amssymb}
+
+% Indentation and spacing
+\setstretch{1.25}
+\setlength{\parindent}{0pt}
 
 \begin{document}
 \maketitle
@@ -40,6 +58,7 @@
 
 \section{Zahlen}\label{Zahlen}
 
+\vspace{0.7cm}
 
 \subsection{Die natürlichen Zahlen $\mathsf{N}$}\label{Die natürlichen Zahlen}
 Der Zahlenbereich der natürlichen Zahlen bildet das Zählen als natürlichen Prozess ab. Ob die 0 teil von $N$ ist, ist Definitionssache und nicht überall gleich. Angenommen, das sei nicht der Fall, dann gilt:
@@ -48,10 +67,14 @@ Wie kann man mit natürlichen Zahlen rechnen? Man darf uneingeschränkt addieren
 \skiptwolineswithcenteredexpr{$\mathsf{P}=\{1,2,3,5,7,11,13,17,19,23,29,...\}$.}
 Primzahlen sind nicht durch 1 und sich selbst teilbar!
 
+\vspace{0.35cm}
+
 \subsection{Die ganzen Zahlen $\mathsf{Z}$}\label{Die ganzen Zahlen}
 Erweitert man den Zahlenbereich der natürlichen Zahlen mit negativen Zahlen, hat man die ganzen Zahlen: 
-\skiptwolineswithcenteredexpr{$\mathsf{Z}=\{…-3,-2,-1,0,1,2,3,…\}$.}
+\skiptwolineswithcenteredexpr{$\mathsf{Z}=\{…-3,-2,-1,0,1,2,3,…\}$}
 Nun kann man auch uneingeschränkt subtrahieren.
+
+\vspace{0.35cm}
 
 \subsection{Rationale und irrationale Zahlen $\mathsf{Q}$, $\mathsf{R \backslash Q}$}\label{Rationale und irrationale Zahlen}
 Will man uneingeschränkt dividieren, braucht man Bruchzahlen: 
@@ -66,12 +89,26 @@ Nimmt man negative Brüche dazu, hat man die rationalen Zahlen.
 \end{itemize}
 Bei den rationalen Zahlen ist eines nicht vollständig erlaubt: Das Wurzelziehen, da es zu unendlichen Zahlen führt, die sich nicht als Bruch darstellen lassen, den \textbf{irrationalen Zahlen}: $\sqrt{2}=1,41421356..$. 
 
+\vspace{0.35cm}
+
 \subsection{Die reellen Zahlen $\mathsf{R}$}\label{Die reellen Zahlen}
 Vereint man die rationalen und die irrationalen Zahlen, erhält man die reellen Zahlen $\mathsf{R}$. Jedoch: Wurzelziehen aus negativen Zahlen ist nicht definiert. Zum Beispiel ist $\sqrt{-4}$ nicht definiert. Solche Zahlen sind nicht in $\mathsf{R}$ enthalten.
 
+\vspace{0.35cm}
+
 \subsection{Komplexe Zahlen $\mathsf{C}$}\label{Komplexe Zahlen}
-Eine komplexe Zahl - z - ist beschreibar als reelles Zahlenpaar: $x+iy|x,y \in \mathsf{R}, i = \sqrt{-1}$. Wichtig ist das mit der imaginären Zahl\ref{i - die imaginäre Zahl} das ziehen von negativen Wurzeln möglich ist. Man kann für c auch (x,y) schreiben, wobei x der Realteil und y der Imaginärteil ist. So kann die Menge der komplexen Zahlen ($\mathsf{C}$) auch in Form der reellen Zahlenpaare ($\mathsf{R}^2$) geometrisch auf der komplexen Ebene (auch Gaußsche Zahlenebene) dargestellt werden, siehe Bild unten.
-\skiptwolines
+Eine komplexe Zahl - z - ist beschreibar als reelles Zahlenpaar: \skiptwolineswithcenteredexpr{$x+iy|x,y \in \mathsf{R}, i = \sqrt{-1}$} Wichtig ist das mit der imaginären Zahl \ref{i - die imaginäre Zahl} das ziehen von negativen Wurzeln möglich ist. Man kann für c $\in \mathsf{C}$ auch (x,y) schreiben, wobei x der Realteil und y der Imaginärteil ist. So kann die Menge der komplexen Zahlen ($\mathsf{C}$) auch in Form der reellen Zahlenpaare ($\mathsf{R}^2$) geometrisch auf der komplexen Ebene (auch Gaußsche Zahlenebene) dargestellt werden, siehe Bild.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Bilder/Gaußsche_Zahlenebene.png}
+    \caption{Gaußsche Zahlenebene; $c \in \mathsf{C}$ als reelles Zahlenpaar $(x,y)$}
+    \label{fig:zahlenebene}
+\end{figure}
+
+
+%\skiptwolines
+
 Analog definiert man Addition wiefolgt: 
 \\
 \begin{align*}
@@ -90,11 +127,15 @@ Ist $z$ eine komplexe Zahl, so ist $z^*$ die komplexe Konjugation. In der Darste
 Den Betrag einer komplexen Zahl ergibt sich durch:
 \skiptwolineswithcenteredexpr{$\vert z \vert = \sqrt{x^2+y^2}$}
 Die Division ist definiert als: $\frac{z_1}{z_2} = \frac{z_1}{z_2} \cdot \frac{z_2*}{z_2*}$. Das ist nicht sehr angenehm und kann vermieden werden, wenn es nicht unbedingt sein muss. Sollte kein Weg daran vorbeiführen, so multipliere die Faktorden des Nenners und des Zählers je für sich und vereinfache so gut es gut mit der Definition von i.
-\skiptwolines
+\newpage
 Eine andere Darstellung ist mithilfe von Polarkoordinaten (\ref{Polarkoodinaten}) möglich:
 \skiptwolineswithcenteredexpr{$z = a + i*b$  $\vert a, b, r \in \mathsf{R}, \theta \in [0,2\pi] \Leftrightarrow  z = r*(\cos(\theta)+i*\sin(\theta)) \Leftrightarrow r*e ^i\theta$.}
 
+\vspace{0.7cm}
+
 \subsection{Besondere Zahlen}\label{Besondere Zahlen}
+
+\vspace{0.35cm}
 
 \subsubsection{$\pi$ - Die Kreiszahl}\label{Die Kreiszahl}
 3.1415926535\dots ..damit beginnt die irrationale Zahl $\pi$\footnote{8979323846 2643383279 5028841971 6939937510 5820974944 5923078164 0628620899 8628034825 3421170679 8214808651 3282306647 0938446095 5058223172 5359408128 4811174502 8410270193 8521105559 6446229489 5493038196 4428810975 6659334461 2847564823 3786783165 2712019091 4564856692 3460348610 4543266482 1339360726 0249141273 7245870066 0631558817 4881520920 9628292540 9171536436 7892590360 0113305305 4882046652 1384146951 9415116094 3305727036 5759591953 0921861173 8193261179 3105118548 0744623799 6274956735 1885752724 8912279381 8301194912}.Pi beschreibt das Verhältnis von Umfang zu Durchmesser eines Kreises. Es gibt viele Formeln, in denen $\pi$ die tragende Rolle spielt:
@@ -116,17 +157,27 @@ Volumen \\
 \end{tabular}
 \renewcommand{\arraystretch}{1.0} % Reset the row height to default
 \end{center}
-\hfill
+
+\vspace{0.35cm}
 
 \subsubsection{$e$ - Euler's Zahl}\label{Euler's Zahl}
-Die Eulersche Zahl ist die Basis des natürlichen Logarithmus, also $ln(e) = 1$. Die Eulersche Zahl kann beschrieben werden durch $e = 2,71828$..., aber ähnlich wie für $\pi$ gibt es keine exakte Lösung. Die Eulersche Zahl wurde nach dem Schweizer Mathematiker und Physiker Leonhard Euler \(1707-1783\) benannt. Unter anderem beinhaltet die natürliche Exponentialfunktion $f(x) = e^x$ die Eulersche Zahl. Für uns ist e vor allem wichtig, weil man anhand von der Eulerschen Formel $e^{j\phi}=\cos(\phi)+j*\sin(\phi)$ die komplexen Zahlen in der Exponentialform darstellen kann, was die Berechnungen erheblich erleichtert.
+Die Eulersche Zahl ist die Basis des natürlichen Logarithmus \ref{Logarithmus}, also $ln(e) = 1$. Die Eulersche Zahl kann beschrieben werden durch $e = 2,71828$..., aber ähnlich wie für $\pi$ gibt es keine exakte Lösung. Die Eulersche Zahl wurde nach dem Schweizer Mathematiker und Physiker Leonhard Euler \(1707-1783\) benannt. Unter anderem beinhaltet die natürliche Exponentialfunktion $f(x) = e^x$ die Eulersche Zahl. Für uns ist e vor allem wichtig, weil man anhand von der Eulerschen Formel $e^{j\phi}=\cos(\phi)+j*\sin(\phi)$ die komplexen Zahlen in der Exponentialform darstellen kann, was die Berechnungen erheblich erleichtert.
 
 \absatzformel
 Außerdem gilt $\partial e^t/\partial t=e^t$ was bedeutet, dass die Position von e gleich der Ableitung, also der Geschwindigkeitsänderung ist. Außerdem ist dieser Zusammenhang  besonders schön: 
 \skiptwolineswithcenteredexpr{$\lim_{n \to \infty}\left(1+\frac{1}{n} \right)^n=2,718281828459...$} 
 Damit is e der Grenzwert (\ref{Der Grenzwert}) der (exponentiell) steigenden Zahlenfolge.  
 
+Weitere wichtige Exponentialfunktionen, die in der Natur auftreten sind:
+
+$$y = e-t/\tau \quad \text{fallend}$$
+$$y = (1 - e-t/\tau) \quad \text{steigend}$$
+$$y = (1 - 2e-t/\tau) \quad \text{steigend, mit negativem Anfangswert.}$$
+
+\vspace{0.35cm}
+
 \subsubsection{i - die imaginäre Zahl}\label{i - die imaginäre Zahl}
+$i$ ist definiet als die Lösung der Gleichung $\sqrt{-1}$, daher $i \cdot i = -1$. Das kann man nicht ändern, also akzeptiere es besser und merke die folgenden Regeln:
 \begin{center}
     
     $i^2=-1$
@@ -139,28 +190,39 @@ Damit is e der Grenzwert (\ref{Der Grenzwert}) der (exponentiell) steigenden Zah
     \newline
 \end{center}
 
+\vspace{0.35cm}
 
 \section{Grundlagen \& Rechengesetze}\label{Grundlegende Rechengesetze}
 Eine Verknüpfung lässt sich definieren als die Art und Weise wie 2 Objekte ein Drittes definieren. Die Verknüpfung wird abstrakt mit '$\circ$' ausgedrückt.
 
+\vspace{0.7cm}
+
 \subsection{Kommutativgesetz}\label{Kommutativgesetz}
 Die Reihenfolge der Verknüpfung spielt keine Rolle, e.g. $2\circ 3=3 \circ 2$. 
+
+\vspace{0.35cm}
 
 \subsection{Assoziativgesetz}\label{Assoziativgesetz}
 Die Verknüpfung dreier Zahlen hängt nicht davon ab, wie wir sie gruppieren, e.g. $(2 \circ 3) \circ 4 = 2 \circ (3 \circ 4)$. 
 
+\vspace{0.35cm}
+
 \subsection{Distributivgesetz}\label{Distributivgesetz}
 Der Umgang mit Klammern hängt vom Zahlenraum und der Art der Verknüpfung ab. Für Addition sowie Multiplikation für die Zahlenmenge $\mathsf{R}$ seien beide Verknüpfungen distributiv, sodass gilt: $2\odot (3\oplus 4)=2\odot 3\oplus 2\odot 4$. \hfill \break
 
+\vspace{0.35cm}
+
 \subsection{Die binomischen Formeln}
 \begin{enumerate}
-    \item[1]: $(a+b)^2=a^2+2ab+b^2$
-    \item[2] $(a-b)^2=a^2-2ab+b^2$
-    \item[3]  $(a+b)\cdot(a-b)=a^2-b^2$
+    \item[(a)]: $(a+b)^2=a^2+2ab+b^2$
+    \item[(b)]: $(a-b)^2=a^2-2ab+b^2$
+    \item[(c)]: $(a+b)\cdot(a-b)=a^2-b^2$
 \end{enumerate}
 
+\vspace{0.35cm}
+
 \subsection{Potenzen}\label{Potenzen}
-Eine Potenz ist eine abgekürzte Schreibweise der Multiplikation.
+Eine Potenz ist eine abgekürzte Schreibweise der Multiplikation mit sich selber.
 \begin{itemize}
     \item $a^0=1$
     \item $a^1=a$
@@ -177,21 +239,22 @@ Eine Potenz ist eine abgekürzte Schreibweise der Multiplikation.
     \item $(\frac{a}{b})^{-n}=(\frac{b}{a})^n$ 
 \end{itemize}
 
+\vspace{0.35cm}
+
 \subsection{Wurzeln}\label{Wurzeln}
-Die Wurzel einer Zahl ergibt mit sich selbst multipliziert die Wurzel. Im Normalfall handelt es sich um eine qudratische Multiplikation, aber auch höhere Wurzlen - e.g. die Kubische - ist denkbar. Als Potenz geschrieben ist die qudratische Wurzel $\sqrt{x}=x^{\frac{1}{2}}$ und $\sqrt[n]{x}=x^{\frac{1}{n}}$. Z.B.: $\sqrt[3]{125} = 125^{\frac{1}{3}}$.
-Haben wir eine Potenz mit einer Lösung, dann gilt $x^n=a \Leftrightarrow x=\sqrt[n]{a}$.
-\skiptwolines
-Beispiel: $3^4 = 81 \equiv \sqrt[4]{81} = 3$
-\skiptwolines
-Randnotiz: Damit ist die n-te Wurzel die inverse Funktion (\ref{Inversibilität}) zu der Funktion: $x^n$, die abhängig von x ist (quadratische, kubische, etc.).
+Die Wurzel einer Zahl ergibt mit sich selbst multipliziert die Wurzel. Im Normalfall handelt es sich um eine qudratische Multiplikation, aber auch höhere Wurzlen - e.g. die Kubische $\sqrt[3]{x}$ - ist nicht undenkbar. Als Potenz geschrieben ist die qudratische Wurzel $\sqrt{x}=x^{\frac{1}{2}}$ und $\sqrt[n]{x}=x^{\frac{1}{n}}$, z.B. $\sqrt[3]{125} = 125^{\frac{1}{3}}$.
+Haben wir eine Potenz mit einer Lösung, dann gilt $$x^n=a \Leftrightarrow x=\sqrt[n]{a}$$  wie in $3^4 = 81 \equiv \sqrt[4]{81} = 3.$
+Randnotiz: Damit ist die n-te Wurzel die inverse Funktion (\ref{Inversibilität}) zu der Funktion: $x^n$.
+
+\vspace{0.35cm}
 
 \subsection{Logarithmus}\label{Logarithmus}
-\textbf{Frage}: Mit welcher Zahl muss ich a potenzieren um y zu bekommen? Geschrieben als $\log_a(x)=y$. Beachte, dass das Logarithmieren von Null und negativen Zahlen \textbf{nicht definiert} ist! 
+\textit{Frage}: Mit welcher Zahl muss ich a potenzieren um y zu bekommen? Geschrieben als $\log_a(x)=y$. Beachte, dass das Logarithmieren von Null und negativen Zahlen nicht definiert ist! 
 \skiptwolines
 Außerdem ist der Logarithmus die Umkehrfunktion zur Exponentialfunktion:
  
 \skiptwolineswithcenteredexpr{$f(x)=a^x=y$, $f^{-1}(y)=\log_a(y)=x$} 
-Also liefert der log. den Exponenten der Eexponentialfunktion zur Basis a. Haben wir die Exponentialfunktion $f(x)=e^x$ mit $e$ als Basis, so ist der Logarithmus Naturalis (ln) = $f^{-1}$. Der Logarithmus hat ein paar eigene Rechenregeln:\\
+Also liefert der log. den Exponenten der Exponentialfunktion zur Basis a. Haben wir die Exponentialfunktion $f(x)=e^x$ mit $e$ als Basis, so ist der Logarithmus Naturalis (ln) = $f^{-1}$. Der Logarithmus hat ein paar eigene Rechenregeln:\\
 \begin{itemize}
     \item $\log_a(1)=0$
     \item $\log_a(a)=1$
@@ -202,15 +265,18 @@ Also liefert der log. den Exponenten der Eexponentialfunktion zur Basis a. Haben
     \item $\log_a(p)=\frac{\log_b(p)}{\log_b(a)}$
 \end{itemize}
 \vspace{0.6cm}
-Logarithmische Skalierungen ist hilfreich, wenn die Daten stark variieren oder wenn die Verhältnisunterschiede zwischen Werten von Bedeutung sind, denn \textit{logarithmische Skalierung deckt einen größeren Bereich ab}. Beispiel:
-\skiptwolines
-$\log_{10}(10)=1, \log_{10}(100)=2, \log_{10}(1000)=3$.
+Logarithmische Skalierungen ist hilfreich, wenn die Daten stark variieren oder wenn die Verhältnisunterschiede zwischen Werten von Bedeutung sind, denn logarithmische Skalierung ist dann angenehmer um Strukturen zu erkennen.
 
+\vspace{0.35cm}
 
 \section{Geometrie}\label{Gemoetrie}
+Geometrie ist der Bereich der Mathematik, der sich mit Formen, Größen, Eigenschaften des Raumes und den Beziehungen zwischen verschiedenen Formen beschäftigt. Sie umfasst Konzepte wie Punkte, Linien, Flächen und Volumen. Aus der Schule ist allgemein die \textit{euklidische Geometrie} bekannt, es gibt aber auch noch andere! Im Folgenden soll es um diese, Topologie und Trignonometrie gehen.
 
+\vspace{0.7cm}
 
 \subsection{Trignonometrie}\label{Trignonometrie}
+Trignonometrie ist das Studium von Dreiecken und den Beziehungen zwischen ihren Seiten und Winkeln. 
+\skiptwolines
 Ein Einheitskreis ist definiert als ein Kreis mit radius 1. Das Interessante hierbei ist, dass sich die x- und y-Koordinate mithilfe von sinus und cosinus bestimmen lassen, abhängig vom Winkel. Man könnte auch sagen: 
 \skiptwolineswithcenteredexpr{$\cos(\theta) = \frac{x}{1}$}
  und \skiptwolineswithcenteredexpr{$\sin(\theta) = \frac{y}{1}$}
@@ -230,7 +296,7 @@ Die gewöhnliche Definition von sinus, cosinus und tangens, die sich auf Dreieck
  \begin{figure}[h]
     \begin{center}    
         \includegraphics[scale=0.32]{Bilder/Sinus_und_Kosinus_am_Einheitskreis_1.svg.png}
-        \caption[short]{Einheitskreis von der Wikipedia Seite. Vom 13. Oktober, 2023.}
+        \caption{Einheitskreis von der Wikipedia Seite. Vom 13. Oktober, 2023.}
     \end{center}
     \label{Einheitskreis_Bild}
 \end{figure} \hfill \break
@@ -250,6 +316,8 @@ Fassen wir zusammen: Die expliziten Formeln zeigen, dass \textbf{Sinus}, \textbf
     \cos(-\theta) &= \cos(\theta)
 \end{align*}
 Das ist auch der Grund, warum diese Funktionen (cos und sin) periodisch sind. Für Winkel $> 360$ kann man genauso gut Modulo rechnen und kommt wieder bei 0, bzw. 1 an.
+
+\vspace{0.7cm}
 
 \subsection{Polarkoodinaten}\label{Polarkoodinaten}
 In Polarkoordinaten wird ein Punkt durch Angabe des Abstands r zum Koordinatenursprung und durch einen Winkel $\theta$ (auch Azimut genannt) bezüglich einer vorgegebenen Achse (z.B. der X-Achse) beschrieben. Das Zahlenpaar $(r,\theta)$ wird als Polarkoordinaten des Punktes bezeichnet. Umrechnen lassen sich die Koordinaten in das andere System wiefolgt:
@@ -276,51 +344,118 @@ Außerdem sollte der der Wertebereichs des Winkels mit einem haloffenen Interval
 An dieser Stelle sei eine Besonderheit genannt. Wir wissen, dass für die Umrechnung $f_{P\rightarrow CK} = r*sin(\theta)=y, r*cos(\theta)=x$. Da sich r aus der Formel für den Tangens herauskürzen lässt, erhalten wir $tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$. Anders formuliert beudetet das folgendes: Über den Winkel $\theta$ lässt sich mit $\tan(\theta)$ das Verhältnis $y:x$ berechnen. Daher können wir den Winkel $\theta$ mit der inversen zu berechenen. $f^{-1} \equiv \tan^{-1}(\frac{y}{x})$ übersetzt sich zu $\arctan(\frac{y}{x})$, woraus folgt: $\arctan(Gegenkahete/Ankathete)=\theta.\footnote{$\theta$ is in radian.}$
 \skiptwolines
 Werden Kreiskoordinaten mit einer dritten Koordinate ergänzt, ergeben sich räumliche Polarkoordinaten, wie z. B. Kugelkoordinaten oder Zylinderkoordinaten.
+
+\vspace{0.35cm}
+
 \subsubsection{Komplexe Zahlen mittels Polarkoodinaten}
 $z \in \mathsf{C} = a + b\cdot i \equiv z = \vert z \vert \cdot e^{i\theta} = \vert z \vert (\cos(\theta) + i \cdot \sin(\theta)) = \vert z \vert \cdot \cos(\theta) + \vert z \vert \cdot i \cdot \sin(\theta)$
+
+\vspace{0.7cm}
 
 \subsection{Bogenmaß und Radian}\label{Bogenmaß und Radian}
 Meistens werden Winkel in Grad angegeben. Aber ein Winkel von  bsp. 45 Grad kann auch in Bogenmaß ($\frac{1}{4}\pi \approx 0,79$) angegeben werden. Es gilt: $360\deg = 2\pi$, $1\pi = 180\deg$ und $1,5\pi = 270\deg$. Zu jedem Mittelpunktswinkel am Einheitskreis gehört ein Kreisbogen auf dem Einheitskreis. Die Länge des Kreisbogens ist ein Maß für die Größe des Winkels. Dieses wird als Bogenmaß bezeichnet und trägt die Einheit \textit{Radiant}, abgekürzt \textit{rad}. 
 \begin{center}
     \framebox{$rad=\frac{\deg}{180\deg}*\pi$ und $\deg=\frac{rad}{\pi}*180\deg$}
 \end{center}
+
+\vspace{0.7cm}
+
 \subsection{Phytagoras}\label{Phytagoras}
 $a^2+b^2=c^2$
 
+\vspace{0.7cm}
+
 \section{Statistik}\label{Statistik}
 
-\subsection{Durchschnitt}\label{Durchschnitt}
+\vspace{0.35cm}
+
+\subsection{Die Termini der Statistik}\label{Die Termini der Statistik}
+Was man kennen sollte \dots
+
+\vspace*{0.35cm}
+
+\subsubsection{Durchschnitt}\label{Durchschnitt}
 Gibt es eine endliche Datenmenge $D$, die aus Stichproben der Form $x\sim P_X$ besteht, ist der Durchschnitt der arithmetische Mittelwert:
 $$\bar{x} := \frac{1}{|D|}\sum_{x\in D} x$$
 Der Durchschnitt ist also ein Schätzwert für den unbekannten Erwartungswert einer Verteilung von dem die Stichproben kommen.
-\subsection{Modus}\label{Modus}
+
+\vspace{0.35cm}
+
+\subsubsection{Modus}\label{Modus}
 Das am häufigsten vorkommende Element einer Datenmege:
 $$ Modus(D) = {1,2,3,6,7,8,3,2,2} = 2$$
-\subsection{Median}\label{Median}
+
+\vspace{0.35cm}
+
+\subsubsection{Median}\label{Median}
 Jenes Element einer Datenmenge, zu dem jeweils 50\% größer und 50\% kleiner sind:
 $$ Median(D) = {1,2,3,4,5,6,7} = 4$$
-\subsection{Erwartungswert}\label{Erwartungswert}
+
+\vspace{0.35cm}
+
+\subsubsection{Erwartungswert}\label{Erwartungswert}
 Der Erwartungswert ist der förmliche Begriff für den Durschnitt einer Variablen, mit dem Unterschied, das der Erwartungswert prinzipiell ins Unendliche geht. Ausgedrückt wird das mit:
 $$E[X] := \mu_X := \int_{x\in\Omega} x dP_X(x)$$  
 
-\subsection{Varianz}\label{Varianz}
+\vspace{0.35cm}
+
+\subsubsection{Varianz und Kovarianz}\label{Varianz und Kovarianz}
 Die Varianz misst die erwartete Abweichung einer Variablen vom Erwartungswert. Mit der euklidischen Distanzt als Metrik (hoch 2) ergibt sich folgende Formel:
 $$Var(X) = E[(X-E[X])^2]$$
 
-\subsection{Standardabweichung}\label{Standardabweichung}
+Ein positiver Kovarianzwert bedeutet, dass hohe Werte für die erste Koordinate des Paares mit hohen Werten für die zweite Koordinate des Paares korrespondieren. Ein negativer Kovarianzwert drückt eine Korrespondenz von hohen Werten in der ersten Koordinate mit niedrigen Werten in der zweiten Koordinate aus. Ein Wert von $0$ bedeutet, dass die Werte der beiden Koordinaten nicht miteinander korrespondieren. Gegeben eine Menge von $n$ Datenpunkten in einem $d$-dimensionalen Datenspace als eine $n\times d$-Matrix $D$, wird die Kovarianzmatrix berechnet als $$C=\frac{1}{n-1}(D-\mu)\cdot(D-\mu)^T$$ wobei $\mu$ den Mittelwertvektor der Datensatzes bezeichnet.
+
+\vspace{0.35cm}
+
+\subsubsection{Standardabweichung}\label{Standardabweichung}
 Die Standardabweichung ist die Wurzel der Varianz. Sie ist stets angegeben in der selber Größe wie das zu messende Merkmal.
 $$\sigma = \sqrt[2]{Var(X)}$$
 
-\subsection{Korrelation}\label{Korrelation}
+\vspace{0.35cm}
 
+\subsubsection{Korrelation}\label{Korrelation}
+Die Korrelation ist eine statistische Technik, die verwendet wird, um die Beziehung zwischen zwei Variablen zu bestimmen. Sie misst, wie stark zwei Variablen miteinander zusammenhängen. Der Korrelationskoeffizient variiert zwischen -1 und +1. Ein Wert nahe +1 zeigt eine starke positive Korrelation, während ein Wert nahe -1 eine starke negative Korrelation anzeigt. Ein Wert nahe Null bedeutet, dass zwischen den Variablen keine Korrelation besteht. Die Formel zur Berechnung der Korrelation zwischen zwei Variablen X und Y ist:
 
+$$r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2(y_i - \bar{y})^2}}$$
 
-\subsection{Pearson's chi-square test}\label{Pearson's chi-square test}
+wobei $x_i$ und $y_i$ die einzelnen Datenpunkte, $\bar{x}$ und $\bar{y}$ die Durchschnittswerte und $n$ die Anzahl der Datenpunkte sind.
 
+\vspace{0.35cm}
+
+\subsection{Statistische Verfahren}\label{Statistische Verfahren}
+
+\vspace*{0.35cm}
+
+\subsubsection{MLE}\label{MLE}
+
+\vspace*{0.35cm}
+
+\subsubsection{Pearson's Chi-Quadrat-Test}\label{Pearson's Chi-Quadrat-Test}
+Der Pearson's Chi-Quadrat-Test ist ein statistisches Verfahren, das verwendet wird, um festzustellen, ob ein beobachteter Datensatz mit einer erwarteten Verteilung übereinstimmt. Es basiert auf der Berechnung der Chi-Quadrat-Statistik, die die Abweichung zwischen den beobachteten und erwarteten Häufigkeiten misst. Der Test verwendet die Nullhypothese, dass es keine signifikante Abweichung gibt, und die Alternative, dass es eine signifikante Abweichung gibt. Der Chi-Quadrat-Test berechnet die Chi-Quadrat-Statistik als Summe der quadrierten Abweichungen zwischen den beobachteten und erwarteten Häufigkeiten, dividiert durch die erwarteten Häufigkeiten. Die resultierende Statistik folgt einer Chi-Quadrat-Verteilung. Die Freiheitsgrade des Chi-Quadrat-Tests werden durch die Anzahl der Kategorien im Datensatz minus 1 bestimmt. Sie geben an, wie viele Freiheitsgrade zur Verfügung stehen, um die Daten zu variieren, während die Nullhypothese aufrechterhalten wird. Der Pearson's Chi-Quadrat-Test ist ein weit verbreitetes Verfahren in der statistischen Analyse, insbesondere in der Kontingenztafelanalyse und der Anpassungstestung.
+
+\vspace{0.35cm}
+
+\subsubsection{T-Test}\label{T-Test}
+
+\vspace{0.35cm}
+
+\subsubsection{Sampling}\label{Sampling}
+
+\vspace{0.35cm}
+
+\subsubsection{Varianzanalyse}\label{Varianzanalyse}
+Anova
+
+\vspace{0.35cm}
 
 \section{Wahrscheinlichkeit}\label{Wahrscheinlichkeit}
 
+\vspace{0.35cm}
+
 \subsection{Abhängige und unabhängige Variable}\label{Abhängige und unabhängige Variable}
+Die unabhängige Variable ist der Faktor, den ein Forscher manipuliert, während die abhängige Variable das Ergebnis ist, das gemessen wird, um den Einfluss der unabhängigen Variable zu sehen.
+
+\vspace{0.35cm}
 
 \subsection{Kolmogorow' Axiome}\label{Kolmogorow's Axiome}
 Kolmogorow's drei Axiome - so heißen die Grundsätze einer Theorie - sind die bekannteste Beschreibung der grundlegenden Eigenschaften der Wahrscheinlichkeitsrechnung. Seien $\Omega={\omega_1, \omega_2, \omega_3, \omega_4, \omega_5, \omega_6}$ die Ergebnismenge eines Zufallsexperiments, A und B Teilmengen von $\Omega$ und P eine Funktion, die jedem A eine reelle Zahl zwischen 0 und 1 zuordnet. P(A) wird Wahrscheinlichkeit genannt, falls folgende drei Bedingungen (Axiome) erfüllt werden:
@@ -330,14 +465,58 @@ Kolmogorow's drei Axiome - so heißen die Grundsätze einer Theorie - sind die b
     \item $P(A \cup B)=P(A)+P(B)$ Dies bedeutet also, dass für kein Ergebnis beide Ereignisse erfüllt werden. A und B nennt man in diesem Fall auch disjunkt.
 \end{enumerate}
 
+\vspace{0.35cm}
+
 \subsection{Wahrscheinlichkeitskonzepte}\label{Wahrscheinlichkeitskonzepte}
-Was ist gemeinsame, Grenz- und bedingte Wahrscheinlichkeit? Die Wahrscheinlichkeit gemeinsamer Erreignisse bedeutet, dass für die zwei Variablen ein Wert gegeben ist, also dass beispielsweise $P(X=male, Y=rugby)=\frac{100}{500}$. Man kommt auch zu diesem Ergebnis, indem man die bedingte Wahrscheinlichkeit mit der  Grenzwahrscheinlichkeit multipliziert, also $P(X,Y)=P(x)\cdot P(y|x)=P(y)\cdot P(x|y)=\frac{125}{500}\cdot \frac{100}{125}=\frac{270}{500}\cdot \frac{100}{270}$. Die  Grenzwahrscheinlichkeit ist die Wahrscheinlichkeit einer Kategorie anzugehören, also dass X=X und Y=y, oder andersherum. Ein Beispiel: $P(X=female)=\frac{230}{500}=0,46$ oder $P(Y=other)=\frac{180}{500}=0,36$. Schließlich die bedingte Wahrscheinlichkeit, also der Fall dass für eine Variable schon ein Wert gesetzt ist der den Wert der Zielvariable einschränkt bzw. spezifiziert, wir schreiben ganz generell: $P(X|Y)=\frac{P(X,Y)}{P(Y)}$.
+
+\subsubsection{Wahrscheinlichkeitsformeln}\label{Wahrscheinlichkeitsformeln}
+
+In der Wahrscheinlichkeitstheorie gibt es verschiedene Konzepte, die uns helfen, die Beziehungen zwischen verschiedenen Ereignissen oder Variablen zu verstehen. Dazu gehören die gemeinsame Wahrscheinlichkeit, die Grenzwahrscheinlichkeit und die bedingte Wahrscheinlichkeit. Die gemeinsame Wahrscheinlichkeit $P(X, Y)$ gibt die Wahrscheinlichkeit an, dass sowohl Ereignis X als auch Ereignis Y eintreten. Sie kann berechnet werden, indem man die bedingte Wahrscheinlichkeit eines Ereignisses, gegeben das andere, mit der Wahrscheinlichkeit des anderen Ereignisses multipliziert:
+
+\begin{equation} P(X, Y) = P(X|Y) \cdot P(Y) = P(Y|X) \cdot P(X) \end{equation}
+
+Die Grenzwahrscheinlichkeit (im Englischen \textbf{marginal} oder \textbf{total probability}) $P(X)$ ist die Wahrscheinlichkeit, dass Ereignis X eintritt, unabhängig von allen anderen Ereignissen. Sie kann berechnet werden, indem man über alle möglichen Werte von Y die gemeinsamen Wahrscheinlichkeiten summiert:
+
+\begin{equation} P(X) = \sum_{y} P(X, Y=y) = \sum_{y} P(X|Y=y) \cdot P(Y=y) \end{equation}
+
+Die bedingte Wahrscheinlichkeit $P(X|Y)$ gibt die Wahrscheinlichkeit an, dass Ereignis X eintritt, gegeben, dass Ereignis Y eingetreten ist. Sie kann berechnet werden, indem man die gemeinsame Wahrscheinlichkeit von X und Y durch die Wahrscheinlichkeit von Y teilt:
+
+\begin{equation} P(X|Y) = \frac{P(X, Y)}{P(Y)} \end{equation}
+
+Wenn eine dritte Variable Z vorhanden ist, können diese Formeln erweitert werden, um die bedingten und gemeinsamen Wahrscheinlichkeiten unter Berücksichtigung von Z zu berechnen. Zum Beispiel ist die gemeinsame Wahrscheinlichkeit von X und Y, gegeben Z, definiert als:
+
+\begin{equation} P(X, Y|Z) = P(X|Y, Z) \cdot P(Y|Z) = P(Y|X, Z) \cdot P(X|Z) \end{equation}
+
+Und die bedingte Wahrscheinlichkeit von X, gegeben Y und Z, ist definiert als:
+
+\begin{equation} P(X|Y, Z) = \frac{P(X, Y|Z)}{P(Y|Z)} \end{equation}
+
+\vspace{0.35cm}
+
+\subsubsection{Bedingte Unabhängigkeit}\label{Bedingte Unabhängigkeit} 
+Bedingte Unabhängigkeit tritt auf, wenn das Auftreten eines Ereignisses A keine Auswirkungen auf die Wahrscheinlichkeit des Auftretens eines Ereignisses B hat, gegeben das Ereignis C. In anderen Worten, A und B sind bedingt unabhängig, wenn die bedingte Wahrscheinlichkeit von B gegeben A und C gleich der bedingten Wahrscheinlichkeit von B gegeben C ist. Dies wird mathematisch durch die Gleichung \begin{equation} P(B|A,C) = P(B|C) \end{equation} ausgedrückt. Wenn A und B unabhängig sind gegeben C, so schreibt man 
+$P(A,B|C) = P(A|C) \cdot P(B|C)$
+
+\vspace{0.35cm}
+
+\subsubsection{Unabhängigkeit von Variablen}\label{Unabhängigkeit von Variablen} 
+Zwei Variablen X und Y sind unabhängig, wenn das Auftreten einer Variable keinen Einfluss auf die Wahrscheinlichkeit des Auftretens der anderen Variable hat. Mathematisch ausgedrückt bedeutet dies, dass die gemeinsame Wahrscheinlichkeit von X und Y gleich dem Produkt der Einzelwahrscheinlichkeiten von X und Y ist: $P(X,Y) = P(X) \cdot P(Y)$. Wenn X und Y unabhängig sind, gilt auch $P(X|Y) = P(X)$ und $P(Y|X) = P(Y)$.
+
+\vspace{0.35cm}
 
 \subsection{Wahrscheinlichkeitsverteilungen}\label{Wahrscheinlichkeitsverteilungen} Die Wahrscheinlichkeitsverteilung wird in zwei Arten unterteilt, die diskrete und die stetige Zufallsvariable. Diese sind dann jeweils noch mehrmals in verschiedene Kategorien unterteilt. Da es sich bei den Wahrscheinlichkeitsverteilungen um Funktionen handelt, gibt es immer einen Funktionswert und einen x-Wert.
 Die \textbf{Diskrete Zufallsvariable} zeichnet sich dadurch aus, dass sie eine begrenzte, abzählbare Anzahl an möglichen Ausprägungen hat. Beispiele dafür sind der Münz- oder Würfelwurf. Beide haben nur eine begrenzte Anzahl an möglichen Ausprägungen, der Münzwurf hat zum Beispiel zwei und der Würfelwurf hat dafür 6 Ausprägungen. Die \textbf{kontinuierliche oder stetige Zufallsvariable} dagegen hat eine unbegrenzte Anzahl an möglichen Ausprägungen. Als Beispiel kann man dafür die Haarlänge nehmen. Theoretisch könnte man sagen, dass es von keinen Haaren, bis zu den weltweit längsten Haaren eine begrenzte Anzahl an Zentimetern gibt. Jedoch, wenn man die Länge in immer genaueren Einheiten angeben würdest, hätte man unendlich viele verschiedene Haarlängen auf der Welt, zumal es keine festgelegte Grenze für das Haarwachstum gibt. Die \textbf{Wahrscheinlichkeits Dichtefunktion} ist eine Wahrscheinlichkeitsfunktion, die kontinuierlich ist. Die Summe der Wahrscheinlichkeiten aller Ergebnisse ist in einem Zufallsexperiment immer gleich 1. In einer stetigen Zufallsverteilung muss die 1 auf unendlich viele Ausprägungen verteilt werden. Das führt dazu, dass die Wahrscheinlichkeit für eine einzelne Ausprägung praktisch gegen 0 geht. Ebendarum lässt sich in der Dichtefunktion nicht die Wahrscheinlichkeit einer einzelnen Ausprägung ableiten. Um aber trotzdem an ein Ergebnis zu gelangen, kannst du über mehrere Ausprägungen hinweg \textit{integrieren} und erhältst so die Wahrscheinlichkeit für diese Menge an Ausprägungen (Verteilungsfunktion). Genannt werden hier der Erwartungswert $E$, die Varianz $V$ (Standardabweichung ist $\sqrt V$), die Funktion der Wahrscheinlichkeitsverteilung, aber nicht die Verteilungsfunktion.
 
+\vspace{0.35cm}
+
 \subsubsection{Normalverteilung}\label{Normalverteilung}
 Die Normalverteilung wird auch Gaußsche Glockenkurve genannt. Die beiden Parameter ($\mu$  und $\sigma$) geben Mittelwert sowie Standardabweichung der Normalverteilung an. Der zentrale Grenzwertsatz besagt, dass unter bestimmten allgemeinen Voraussetzungen die Summe aus n unabhängigen, identisch verteilten Zufallsvariablen wiederum normalverteilt ist. Als Beispiel se nehmen wir den Wurf von n fairen Würfeln: Wenn man man nur einen Würfel wirft, so ist jede Augenzahl gleich wahrscheinlich. Wirft man hingegen n-viele Würfel, so wird die mittlere Augenzahl durch die Normalverteilung beschrieben. Daher ist die Normalverteilung die Wichtigste, da natürliche Phänomene mit ausreichend großem n sich ihr annähern. Die Formel zur Berechnung der Verteilung lautet \textit{$f(x,\mu, \sigma)=\frac{1}{\sigma\sqrt{2\pi}}*e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$}. Es gilt: $E=\mu$ und $V=\sigma^2$, bzw. $\sigma$ (Standardabweichung). Die gesamte Fläche, die von der Kurve der Normalverteilung eingeschlossen wird ist stets 1. Ist $\mu=0$ und $\sigma=1$ spricht man von der Standardnormalverteilung, die durch eine vereinfachte Gleichung (da $\mu=0$ wegfällt und $\sigma=1$) beschrieben wird: $\frac{1}{2\pi}e^-\frac{1}{2}x^2$. Der Vorfaktor stellt sicher, dass die gesamte Fläche unter der Kurve (und damit auch das Integral von -inf bis inf) eine Fläche von genau 1 hat. Die $\frac{1}{2}$ im Exponenten der e-Funktion gibt der Normalverteilung eine Einheitsvarianz. Jede Normalverteilung ist eine Variante der Standardnormalverteilung mit gestreckter Standardabweichung ($\frac{1}{\sigma}$) und \textit{z-transfomiertem} $\frac{x-\mu_x}{\sigma}$. Geschrieben wird die Normalverteilung für gewöhnlich so: $\mathcal{N}(\mu, \sigma^2)$. 
+
+\vspace{0.35cm}
+
+\subsubsection{Gemischte Verteilung}\label{Gemischte Verteilung}
+Eine Mischverteilung besteht aus mehreren Untermengen die gemeinsame eine große Verteilung bilden. Ein solcher Ansatz kann verwendet werden, um eine große Population mit verschiedenen Unterpopulationen zu modellieren, von denen jede individuelle Eigenschaften hat. Formal bietet man für jede Unterpopulation $z$ eine spezifische Verteilung $P(X\mid Z=z)$ an. Diese werden gemischt entsprechend der Wahrscheinlichkeit $P(Z=z)$, ein Individuum aus dieser Unterpopulation auszuwählen, d.h. $$P(X=x) = \sum_{z}P(Z=z)\cdot P(X=x\mid Z=z)$$
+\vspace{0.35cm}
 
 \subsubsection{Exponentialverteilung}\label{Exponentialverteilung}
 Die Exponentialverteilung ist eine kontinuierliche Verteilung, die zur Modellierung der Dauer zufälliger Zeitintervalle genutzt wird. Der Parameter $\lambda$ steht für die Zahl der erwarteten \textit{Ereignisse} pro Zeitintervall. Als Beispiele nehmen wir hier die Länge eines Telefongesprächs oder der radioaktive Zerfall. Die Verteilung lässt keine negativen Werte zu, da negative Zeiten sinnlos sind. Sie wird in der Statistik häufig mit $\exp(\lambda)$ abgekürzt. Die Dichtefunktion ist folgendermaßen definiert:
@@ -350,6 +529,8 @@ Die Exponentialverteilung ist eine kontinuierliche Verteilung, die zur Modellier
 \end{flushleft} 
 Der Erwartungswert $E$ ist defniert als $\frac{1}{\lambda}$, die Varianz $V$ als $\frac{1}{\lambda^2}$. Der Modus (der Wert, bei dem die Wahrscheinlichkeit am größten ist) liegt bei dieser Dichtefunktion bei $x_{mod}=0$. Möchte man die Wahrscheinlichkeit des Eintretens eines Ereignisses berechnen, so nutzt man dafür idealerweise die Verteilungsfunktion $F(x)$, die das Integral bis zu einem Wert x bildet. So entsteht eine akkumulierte Wahrscheinlichkeit $P(X\leq x)$.Oft ist die tatsächliche Verteilung keine Exponentialverteilung, jedoch ist die Exponentialverteilung einfach zu handhaben und wird zur Vereinfachung angewandt. Sie ist anwendbar, wenn ein Poisson-Prozess vorliegt, also die poissonschen Annahmen erfüllt sind. Die Exponentialverteilung ist ein Teil der viel größeren und allgemeineren Exponentialfamilie, einer Klasse von Wahrscheinlichkeitsmaßen, die sich durch eine leichte Handhabbarkeit auszeichnen.    
 
+\vspace{0.35cm}
+
 \subsubsection{Gleichverteilung}\label{Gleichverteilung}
 Der französische Mathematiker Pierre Simon de Laplace (1749 bis 1827) untersuchte als einer der Ersten intensiv Zufallsexperimente, bei denen angenommen werden kann, dass jedes seiner Ergebnisse mit der gleichen Wahrscheinlichkeit eintritt. Zufallsexperimente mit Gleichverteilung heißen Laplace-Experimente. Die Gleichverteilung ist ein Sonderfall unter den Wahrscheinlichkeitsverteilungen, denn sie existiert sowohl als \textit{stetige} als auch als \textit{diskrete} Verteilung. Hier seien einmal kurz die Formeln für deren Berechnung genannt. Zuerst für den Fall einer diskreten Verteilung:
 $f(x)=\frac{1}{n}, E(x)=\frac{n+1}{2}$ und $V(x)=\frac{1}{n}\sum_{0}^{n}(x_i-\mu)^2$. Und für eine stetige Verteilung: 
@@ -359,14 +540,22 @@ $f(x)=
     0 & \text{sonst} \\
 \end{cases}$. a und b seien die Grenzen eines Intervalls, die x beinhalten. Da für alle x die gleiche Wahrscheinlichkeit gilt, ist diese von den Grenzen des Intervalls abhängig. $E(x)=\frac{a+b}{2} und V(x)=\frac{1}{12}\cdot (b-a)^2$.
 
+\vspace{0.35cm}
+
 \subsubsection{Poissonverteilung}\label{Poissonverteilung}
 Die Poisson-Verteilung ist eine diskrete Wahrscheinlichkeitsverteilung, welche die Verteilung von Zählgrößen beschreibt. Oder mit anderen Worten: Wie oft tritt ein bestimmtes, zählbares Ereignis ein, wenn man es sehr oft wiederholt? Der Parameter gibt hierbei die mittlere Ereignisrate an.Die Wahrscheinlichkeit für die Zufallsvariable X der Poisson-Verteilung wird durch folgende Formel berechnet: $\frac{\lambda^x}{x!}\cdot e^{-\lambda}, x\in N_0$. Es besteht ein Zusammenhang zwischen Exponentialverteilung und Poissonverteilung. Beide betrachten denselben Sachverhalt aus verschiedenen Perspektiven. Die Exponentialverteilung gibt an, wie die Wahrscheinlichkeit der Dauer verschiedener Vorgänge verteilt ist. Die Poissonverteilung zählt, wie oft die gezählten Ereignisse in einem festgelegten Intervall auftreten. Ausgehend von der Exponentialverteilung soll ermittelt werden, wie die Wahrscheinlichkeit ist, dass genau n Ereignisse in einem Zeitintervall von t auftreten. Wie sich zeigen wird, ist das Ergebnis die Poissonverteilung. Da der Binomialkoeffiziert bei größeren Werten nur unter erhöhtem Rechenaufwand zu berechnen ist, kann man die Poisson-Verteilung benutzen, um die Binomialverteilung anzunähern. Man benutzt die Poisson-Verteilung im allgemeinen zu Annäherung der Binomialverteilung, wenn n groß ist und p klein. Als Erwartungswert $E=\mu$ der Poisson-Verteilung verwenden wir $\mu=\lambda=n \cdot p$, der mit der Varianz identisch istd. Allgemein approximiert die Poisson-Verteilung die Binomialverteilung sehr gut für Werte von $n \geq 100$ und $\lambda \leq 10$. Neben den Geschwindigkeitsvorteilen bei der Berechnung, hat die Poission-Verteilung noch den Vorteil, dass sie unendlich abzählbar ist, sich also ins positiv Unendliche inf fortsetzt.
+
+\vspace{0.35cm}
 
 \subsubsection{t-Verteilung oder Student-t-Verteilung}\label{t-Verteilung oder Student-t-Verteilung}
 Die Normalverteilung wird bei vielen statistischen Verfahren eingesetzt. Allerdings unterschätzt die Normalverteilung bei kleinen Stichprobenumfängen die Standardabweichung. Dieser Effekt kann aber ausgeglichen werden, indem man bei manchen statischen Verfahren statt der Normalverteilung die t-Verteilung einsetzt. Die t-Verteilung ist eine der Normalverteilung verwandte Verteilung. Die t-Verteilung erhält man, wenn man den Mittelwert einer normalverteilten Population in Situationen schätzt, in denen der Stichprobenumfang klein\footnote{Eine gute Faustregel lautet, dass Sie bei einer Stichprobengröße von mindestens 30 die z-Verteilung anstelle einer t-Verteilung nutzen können.} ist und die Standardabweichung der Population unbekannt ist. Diese Verteilung zeichnet sich dadurch aus, dass Sie breitere Enden als die Normalverteilung hat. Für steigende Stichprobenumfänge nähern sich die beiden Verteilungen an und sind schließlich identisch. Die t-Verteilung ist folgendermaßen definiert: $T=\frac{Z}{\sqrt{\frac{1}{n}*\chi^2}}$, $E=0$ und $V=\frac{n}{n-2}$, wobei Z normalverteilt ist und $\chi^2$ unabhängig und \textit{$Chi^2$} verteilt ist.
 
+\vspace{0.35cm}
+
 \subsubsection{\textbf{$Chi^2$} Verteilung}\label{Chi Quadrat Verteilung}
 Die $Chi^2$ Verteilung ist eine kontinuierliche Verteilung, die häufig zur Testung statistischer Unabhängigkeit oder zur Gültigkeit einer Hypothese (goodness of fit) genommen wird, genannt sei hier der \textit{Pearson's chi-square test}, \ref{Pearson's chi-square test}. Nur wenige weltliche Dinge sind mit der $Chi^2$ Verteilung gut beschrieben. Es gibt einen Parameter, der die Freiheitsgrade n festlegt\footnote{Würde man zufällige unabhängige Stichproben von n normalverteilten Größen nehmen, summierten sich diese Stichproben zu einer einer $Chi^2-V$ mit n Freiheitsgraden.}. Diese Freiheitsgraden bestimmen die Verteilung insofern, als dass $\chi_n^2=Z_1^2+...+Z_n^2$ gilt, also dass n unabhängige, quadrierte und standardnormalverteilte Zufallsvariablen ihr ungefähr äquivalent sind, d. h. $Z_k\sim \mathcal{N} (0,1) \forall k=1,...n$ und $\chi^2\sim\chi_n^2$. Außerdem gilt: $E_{Chi^2}=n$ und $V_{Chi^2}=2\cdot k$. 
+
+\vspace{0.35cm}
 
 \subsubsection{Binominalverteilung}\label{Binominalverteilung}
 Prozesse bei denen nur 2 mögliche Ausgänge denkbar sind (e.g. ein Münzwurf) lassen sich mit der \textbf{Bi}nominalverteilung beschreiben. Voraussetzung dafür ist, dass das Experiment aus gleichen und von einander unabhängigen Versuchen besteht. Die Parameter n und k deuten schon darauf hin, dass es sich um eine diskrete Wahrscheinlichkeitsverteilung handelt, die Fragen nach k Erfolgen bei n Ereignissen beantwortet. Es gilt: 
@@ -388,6 +577,8 @@ Prozesse bei denen nur 2 mögliche Ausgänge denkbar sind (e.g. ein Münzwurf) l
 \\
 Der Binominalkoeffizient beschreibt die Anzahl der Möglichkeiten, wie k Objekte in einer Gruppe aus n ohne Wiederholung angeordnet werden können. Die Binomialverteilung ist linksschief, wenn $p \geq 0,5$\footnote{Greather than aber nicht gleich! Symbol fehlt.}, rechtsschief wenn $p \leq 0,5$ und bei $p = 0,5$ symmetrisch. Wenn n hinreichend groß ist, kann die Normalverteilung als Annäherung zur Binomialverteilung verwendet werden, da die Schiefe mit zunehmenden n kleiner wird.
 
+\vspace{0.35cm}
+
 \subsubsection{Bernoulliverteilung}\label{Bernoulli}
 Die Bernoulli Verteilung ist eine diskrete Verteilung, deren Zufallsvariable X nur zwei Werte annimmt: 0 = Misserfolg / Niete bzw. 1 = Erfolg / Treffer. Sie entsteht, wenn man ein Bernoulli Experiment (welches nur 2 mögliche Ausgänge hat) genau 1 Mal ausführt. Die Bernoulli Verteilung ist daher ein Spezialfall der Binomialverteilung für n=1. 
 \\
@@ -398,11 +589,42 @@ und $f_{bernoulli}(x)=\begin{cases}
     0 & {sonst.} \\
 \end{cases}$
 
+\vspace{0.35cm}
+
 \subsection{Bayes}\label{Bayes}
+Der Satz von Bayes trifft Aussagen über Wahrscheinlichkeiten gegeben dass man Daten oder Observationen kennt, also von Ereignissen ($Data$) zu deren Ursachen (Parameter=$\Theta$). Je mehr desto zuverlässiger wird die Verteilungswahrscheinlichkeit einer Variablen. Bayes Satz lautet:
+$$P(\Theta|Data) = \frac{P(Data|\Theta) \cdot P(\Theta)}{P(Data)}$$
+$P(\Theta|Data)$ für die \textbf{posteriore} Wahrscheinlichkeit der Parameter gegeben die Daten. $P(Data|\Theta)$ ist die \textbf{Likelihood} die Daten gegeben der Parameter zu beobachten. Für $P(\Theta)$ legt man in der Regel einen \textbf{Prior} fest, also dessen Wahrscheinlichkeiten ohne vorherige Kenntnis. 
 
+\vspace{0.35cm}
 
-\section{Algebra}\label{Algebra}
-Ausgehend von dem Wissen was ein Vektor, ein Vektorraum und Basisvektoren sind, definieren wir eine lineare Transformation als eine Abbildung, welche den Nullvektor unverändert und die Linien aller Dimensionen im Vektorraum in den gleichen Abständen zueinander lässt\footnote[1]{Der Begriff der Linearität liegt hier vor.}. Für die Basisvektoren bedeutet dass, dass ein Vektor \textit{v}, für den gilt \textbf{Gl.1}: $v=3*\hat{i}+4*\hat{j}$ nach einer willkürlichen Transformation - wir können hier sagen nach Anwendung der Matrix \textit{A} auf \textit{v} - nach wie vor durch den Ausdruck \textbf{Gl.1} gegeben ist. Sei A eine quadratische Matrix in $R^n$, x und b Vektoren im selben Raum, dann ist A eine lineare Transformation auf x, geschrieben \textbf{Gl.2}: $A*x=b$. s
+Nehmen wir das sogenannte "Monty Hall Problem". In diesem Spiel gibt es drei Türen, hinter einer davon ist ein Gewinn und hinter den anderen beiden sind Ziegen. Der Spieler wählt eine Tür aus, der Moderator öffnet eine andere hinter der sich eine Niete befindet. Der Spieler hat dann die Möglichkeit, bei seiner ursprünglichen Wahl zu bleiben oder zu wechseln. Die Frage ist nun: Sollte der Spieler bei seiner ursprünglichen Wahl bleiben? Mit Bayes-Theorems lässt sich diese Frage klar beantworten. 
+
+\vspace{0.35cm}
+
+Sei A die gwählte Tür und C  die Tür, die der Moderator öffnet. Wie hoch ist die Wahrscheinlichkeit, dass der Preis hinter Tür A ist, gegeben dass C geöffnet wurde, und wie hoch ist sie für B? \textbf{\textit{Wir müssen also $P(A|C)$ und $P(B|C)$ berechnen.}} Wenn $P(B|C) > P(A|C)$ ist, sollte gewechselt werden! Wir wissen, dass $P(A)=P(B)=P(C)=\frac{1}{3}$ und dass nur eine Tür geöffnet wird hinter der nicht der Preis ist. Es gilt:
+$$
+P(A|C) = \frac{P(C|A) \cdot P(A)}{P(C)} P(A) = \frac{P(C|A) \cdot P(A)}{P(C|A) \cdot P(A) + P(C|B) \cdot P(B) + P(C|C) \cdot P(C)}
+$$
+wobei $P(C)$ nach dem Prinzip der Gesamtwahrscheinlichkeit die Wahrscheinlichkeiten normiert (die Summe aller Wahrscheinlichkeiten unter dene C geöffnet wird in unserem Fall!). Mit einsetzen erhalten wir
+$$
+P(A|C) = \frac{0.5 \cdot \frac{1}{3}}{0.5 \cdot \frac{1}{3} + 1 \cdot \frac{1}{3} + 0 \cdot \frac{1}{3}} = \frac{1}{3}
+$$
+Um die Logik nachzuvollziehen, stelle man die Frage: \textit{Wie wahrscheinlich ist es Tür X zu öffnen, gegeben dass der Preis hinter Tür Y ist?} Andererseits ist 
+$$
+P(B|C) = \frac{P(C|B) \cdot P(B)}{P(C)} P(B) = \frac{P(C|B) \cdot P(B)}{P(C|B) \cdot P(B) + P(C|A) \cdot P(A) + P(C|C) \cdot P(C)} 
+$$
+$$
+= \frac{1 \cdot \frac{1}{3}}{1 \cdot \frac{1}{3} + 0.5 \cdot \frac{1}{3} + 0 \cdot \frac{1}{3}} = \frac{2}{3}
+$$ 
+\hfill \break
+\vspace{0.35cm}
+und damit größer für B, man sollte wechseln.
+
+\vspace{0.7cm}
+
+\section{Lineare Algebra}\label{Lineare Algebra}
+Wir definieren eine lineare Transformation - nichts anderes als eine Matrix - als eine Abbildung, welche den Nullvektor unverändert und die Linien aller Dimensionen im Vektorraum in den gleichen Abständen zueinander lässt\footnote[1]{Der Begriff der Linearität liegt hier vor.}.
 \\
 \vspace{0.1cm}
 \\
@@ -418,9 +640,107 @@ Im folgenden sind die 8 Axiome der Linearen Algebra:
     \item $(a+b)*v=a*v+b*v$
 \end{enumerate}
 
+\vspace{0.7cm}
+
+\subsection{Inverse einer matrix}\label{Inverse einer matrix}
+Die Umkehrtransformation einer beliebigen Transformation M, geschrieben als $M^{-1}$ heißt Inverse zu M. Nicht jede Matrix ist invertierbar. Als generelle Voraussetzung gilt, dass
+\begin{enumerate}
+    \item die Matrix quadratisch ist
+    \item die Determinante ungleich Null ist\footnote{Wenn die Determinante Null ist, hat die Matrix entweder keine Inverse oder unendlich viele Inversen.}
+\end{enumerate}
+
+Ist das nicht der Fall, lässt sich trotzdem eine Pseudoinverse berechnen, siehe \ref{Moore-Penrose Pseudoinverse}. Eine bekannte Methode zur Berechnung der (symmetrischen) Inversen ist das Gauss-Jordan-Eliminations-Verfahren:
+
+Zu invertieren sei die Matrix $$M = \begin{bmatrix}
+    2 & 1 & -3 \\
+    4 & -1 & 2 \\
+    1 & 3 & -1 \\
+\end{bmatrix}$$
+Der Gedanke ist stufenweise jede Variable zu eliminieren indem man Reihenweise Verknüpfungen ausführt.
+
+\vspace*{0.2cm}
+
+\[
+\begin{array}{ccc|c}
+    2 & 1 & -3 & 0 \\
+    4 & -1 & 2 & 0 \\
+    1 & 3 & -1 & 0 \\
+\end{array}
+\]
+
+\[
+\begin{array}{ccc|c}
+    1 & \frac{1}{2} & -\frac{3}{2} & 0 \\
+    4 & -1 & 2 & 0 \\
+    1 & 3 & -1 & 0 \\
+\end{array}
+\]
+
+\[
+\begin{array}{ccc|c}
+    1 & \frac{1}{2} & -\frac{3}{2} & 0 \\
+    0 & -3 & 8 & 0 \\
+    0 & \frac{5}{2} & -\frac{1}{2} & 0 \\
+\end{array}
+\]
+
+\[
+\begin{array}{ccc|c}
+    1 & \frac{1}{2} & -\frac{3}{2} & 0 \\
+    0 & 1 & -\frac{8}{3} & 0 \\
+    0 & \frac{5}{2} & -\frac{1}{2} & 0 \\
+\end{array}
+\]
+
+\[
+\begin{array}{ccc|c}
+    1 & 0 & \frac{1}{3} & 0 \\
+    0 & 1 & -\frac{8}{3} & 0 \\
+    0 & \frac{5}{2} & -\frac{1}{2} & 0 \\
+\end{array}
+\]
+
+\[
+\begin{array}{ccc|c}
+    1 & 0 & \frac{1}{3} & 0 \\
+    0 & 1 & -\frac{8}{3} & 0 \\
+    0 & 0 & \frac{11}{6} & 0 \\
+\end{array}
+\]
+
+\[
+\begin{array}{ccc|c}
+    1 & 0 & \frac{1}{3} & 0 \\
+    0 & 1 & -\frac{8}{3} & 0 \\
+    0 & 0 & 1 & 0 \\
+\end{array}
+\]
+
+\[
+\begin{array}{ccc|c}
+    1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+    0 & 0 & 1 & 0 \\
+\end{array}
+\]
+
+
+\vspace{0.35cm}
+
+\subsubsection{Moore-Penrose Pseudoinverse}\label{Moore-Penrose Pseudoinverse}
+$$ A^\dagger = (A^T A)^{-1}A^T$$
+wobei $A^T$ die Transponierte der Matrix $A$ bedeutet und $A^{-1}$ ihre Inverse darstellt. Die Moore-Penrose-Pseudoinverse hat die Eigenschaft, dass sie die "beste" Approximation der Inversen ist, selbst wenn die Matrix A nicht quadratisch oder invertierbar ist. 
+
+\vspace{0.35cm}
+
+\subsection{Die Basisvectoren}\label{Die Basisvectoren}
+
+\vspace{0.35cm}
 
 \subsection{Determinante}\label{Determinante}
 Zur Veranschulichung empfiehlt es sich die $\det$ als Faktor vorzustellen, der Flächeninhalt/Volumen des Raumes, der von den Basisvektoren aufgespannt wird, skaliert. Ein Wert von Null bedeutet, dass der Raum in seinen Dimensionen reduziert wird und damit ist die Matrix weder invertierbar noch hat sie linear unabhängige Spalten. Gilt $\det(A)\neq0$, dann ist A invertierbar. Für \textbf{Gl.2} bedeutet das, dass $A^{-1}$ eine eindeutige Lösung besitzt. Ist $\det(A)\neq0$, so besitzt A entweder keine oder unendliche viele Lösungen.
+
+\vspace{0.35cm}
 
 
 \section{Analysis}\label{Analysis}
@@ -486,10 +806,28 @@ Was beschreibt eine Ableitung? Die Ableitung beschreibt das Änderungsverhalten 
 
 \subsubsection{Partielle Ableitungen $\partial$}\label{Partielle Ableitungen}
 Die Ableitung einer Funktion mit mehreren Argumenten nach einem dieser Argumente heißt partielle Ableitung. Das Argument, nach dem nicht abgeleitet wird, verhält sich wie eine Konstante.\hfill\break
-\\\setlength{\fboxrule}{1pt} % Frame thickness
-\framebox{$f_x=\frac{\partial f}{\partial x}$, $f_y=\frac{\partial f}{\partial y}$, $f_{xy}=\frac{\partial^2 f}{\partial xy}$, $f_{x}=\frac{\partial^2 f}{\partial x}$, $f_{yx}=\frac{\partial^2 f}{\partial yx}$}
+
+Sei $f$ eine Funktion $f: \mathbb{R}^n \rightarrow \mathbb{R}, \vec{x}=(x_1, ..., x_n) \rightarrow f(x_1, ..., x_n)$.
+
+Eine \textit{partielle Ableitung} ist dann eine Ableitung von $f$ nach nur einem $x_j$ : $$\frac{\partial f}{\partial x_j}$$
+Das bedeutet, dass du alle anderen $x_i$ als Konstanten annimmst, während du $f$ ableitest.
+
+Der \textit{Gradient} ist nun einfach ein Vektor mit allen partiellen Ableitungen:
+$$ \nabla f = (\frac{\partial f}{\partial x_1}, ..., \frac{\partial f}{\partial x_n}) $$
+
+Jetzt kann man die partielle Ableitung schreiben als $$\frac{\partial f}{\partial x_j} = \vec{e_j} \cdot \nabla f$$ wobei $e_j = (0,..,1,..,0)$ der j-te Vektor der Standardbasis ist. Die Richtungsableitung ist nun die Verallgemeinerung der obigen Gleichung, die es uns ermöglicht, die Ableitung in jeder Richtung zu berechnen (nicht nur in den Richtungen der Vektoren der Standardbasis):  $$\nabla_v f = v \cdot \nabla f$$
+
+\subsubsection{Jacobimatrix}\label{Jacobimatrix}
+Die Jacobimatrix verallgemeinert das Konzept des Gradienten auf den Fall einer Funktion $$f: \mathbb{R}^n \rightarrow \mathbb{R}^m, \vec{x}=(x_1, ..., x_n) \rightarrow \begin{pmatrix} f_1(x_1,..,x_n) \ : \ f_m(x_1, ..,x_n) \end{pmatrix}$$ Sie ist definiert als $$ J = \begin{pmatrix} \frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_n} \ : & \ & : \ \frac{\partial f_m}{\partial x_1} & ... & \frac{\partial f_m}{\partial x_n} \end{pmatrix} $$
+\subsubsection{Hessische Matrix}\label{Hessische Matrix}
+Für die Hessische Matrix sind wir nun wieder bei einer Funktion $f: \mathbb{R}^n \rightarrow \mathbb{R}, \vec{x}=(x_1, ..., x_n) \rightarrow f(x_1, ..., x_n)$. Die Hessische Matrix enthält alle partiellen Ableitungen zweiter Ordnung. Das (i,j)-te Element der Hessischen Matrix ist $$ H_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j},$$ was bedeutet, dass man zuerst nach $x_j$ ableitet und dann nach $x_i$.
 
 \subsection{Polynome}\label{Polynome}
+Polynome sind mathematische Ausdrücke, die aus einer Summe von Potenzfunktionen bestehen. Sie haben die allgemeine Form 
+\begin{equation}
+P(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0
+\end{equation}
+wobei $n$ die Ordnung des Polynoms ist und die Koeffizienten $a_n, a_{n-1}, \ldots, a_1, a_0$ reale Zahlen sind. Die Variable $x$ repräsentiert den unabhängigen Wert, während die Koeffizienten die Gewichtungen der einzelnen Potenzen darstellen. 
 
 \subsection{Integrale}\label{Integrale}
 
@@ -508,25 +846,67 @@ $D_{KL}=\mathbf{E}=[log(\frac{p(x)}{q(x)} )]= \int_{a}^{b}  \log (p(x)/q(x))\,dx
 
 \subsubsection{Jensen-Shannon}\label{Jensen-Shannon}
 
-
-\subsection{Lösungstrategien}
-Wir beschreiben hier ein paar generelle Technicken und Tricks, die beim Lösen von Gleichungen hilfreich sein können. 
-\begin{enumerate}
-    \item Binomische Formeln nutzen 
-    \item Faktorisieren: $2x^3+4x^2-2x-4=0 \equiv 2(x+1)(x-1)(x+2)$
-\end{enumerate}
-
-
 \subsection{Regression}\label{Regression}
+Der Sinn von Regression besteht darin, die Beziehung zwischen einer abhängigen Variablen und einer oder mehreren unabhängigen Variablen zu modellieren. Durch Regression können wir Vorhersagen über den Wert der abhängigen Variablen basierend auf den Werten der unabhängigen Variablen treffen. Es ermöglicht es uns, Muster und Trends in den Daten zu identifizieren, Zusammenhänge zu verstehen und zukünftige Werte vorherzusagen. Regression wird häufig in der Statistik, Ökonometrie und maschinellen Lernens eingesetzt, um Prognosen zu erstellen, Hypothesen zu testen und Entscheidungsgrundlagen zu schaffen.
+
+\vspace{0.7cm}
 
 \subsubsection{Lineare Regression}\label{Lineare Regression}
+In der linearen Regression werden die Parameter anhand der Loss Function \ref{Lossfunktion} angepasst, um eine bestmögliche Anpassung an die Daten zu erreichen. Die Loss Function misst den Fehler zwischen den vorhergesagten Werten und den tatsächlichen Werten. In der linearen Regression wird oft die \textit{Mean Squared Error} (MSE) Loss Function verwendet, definiert als
 
-\subsubsection{Polynomilae Regression}\label{Polynomilae Regression}
+$$L(\theta) = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$
+
+wobei (n) die Anzahl der Datenpunkte ist, $(y_i)$ der tatsächliche Wert des (i)-ten Datenpunkts, $(\hat{y}_i)$ der vorhergesagte Wert und $(\theta)$ die Modellparameter sind. Um die Parameter anzupassen, wird ein Optimierungsalgorithmus wie der Gradientenabstieg (Gradiend descent) verwendet. Der Gradientenabstieg berechnet den Gradienten der Loss Function nach den Parametern und aktualisiert die Parameter in Richtung des negativen Gradienten, um den Fehler zu minimieren. Die Aktualisierung der Parameter erfolgt iterativ mit der folgenden Formel:
+
+$$\theta_{t+1} = \theta_t - \alpha \nabla L(\theta_t)$$
+
+wobei $(\theta_t)$ die Parameter in der (t)-ten Iteration sind, $(\alpha)$ die Lernrate ist und $(\nabla L(\theta_t))$ der Gradient der Loss Function nach den Parametern ist. Der Gradient der MSE Loss Function nach den Parametern $(\theta)$ ist:
+
+$$\nabla L(\theta) = \frac{2}{n} \sum_{i=1}^{n} (\hat{y}_i - y_i) \mathbf{x}_i$$
+
+wobei $(\mathbf{x}_i)$ der Vektor der unabhängigen Variablen des (i)-ten Datenpunkts ist.
+
+Durch wiederholte Anwendung des Gradientenabstiegs wird die Loss Function minimiert und die Parameter $(\theta)$ werden an die Daten angepasst, um eine bestmögliche lineare Regression zu erreichen.
+
+\subsubsection{Polynomische Regression}\label{Polynomilae Regression}
+Die Idee der Funktionsannäherung basiert hier auf einem Polynom \ref{Polynome} von Grad $m$:
+$$y = \alpha_0 + \alpha_1x + \alpha_2x^2 + \alpha_3x^3 + \dots + \alpha_mx^m + \epsilon$$
+Die einfachste Version der Polynomregression verwendet monomiale Basisfunktionen ${1, x, x^2, x^3, \dots }$ in der Design-Matrix. Eine solche Matrix wird in der linearen Algebra als Vandermonde-Matrix bezeichnet.
+
+$$ \Phi = \begin{bmatrix} 1 & x_1 & x_1^2 & \dots & x_1^m \\ 1 & x_2 & x_2^2 & \dots & x_2^m \\ 1 & x_3 & x_3^2 & \dots & x_3^m \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & x_n & x_n^2 & \dots & x_n^m \end{bmatrix}$$
+
+Um die richtigen Parameter $a_i$ zu lernen, verwenden wir den Vektor $\vec{a}^{\,}$, der alle $a_i$ enthält, und lösen die folgende Formel:
+$$y = \Phi \vec{a}^{\,}$$
+$$\vec{a}^{\,} = \Phi^\dagger y$$
+Hierbei ist $\Phi$ die Design-Matrix und $\Phi^\dagger$ ihre Pseudoinverse \ref{Moore-Penrose Pseudoinverse}, und $y$ ist der Vektor der abhängigen Variablen.
+
+\vspace*{0.35cm}
 
 \subsubsection{Logistische Regression}\label{Logistische Regression}
+Die logistische Regression ist eine Methode zur Modellierung von binären abhängigen Variablen (0 oder 1). Sie verwendet die logistische Funktion (auch als Sigmoid-Funktion \ref{Die wichtigsten Funktionen} bekannt) zur Modellierung des Auftretens einer Klasse. Die logistische Funktion hat die Form:
+\begin{equation}
+f(x) = \frac{1}{1 + e^{-x}}
+\end{equation}
 
+Mit einer linearen Kombination der unabhängigen Variablen wird versucht, das Auftreten der abhängigen Variablen zu modellieren, was ausgeschrieben ungefähr so aussieht:
 
-\section{Modellierung}
+\begin{equation}
+P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1x_1 + \beta_2x_2 + \ldots + \beta_nx_n)}}
+\end{equation}
+
+\vspace*{0.35cm}
+
+Hierbei ist $P(y=1|x)$ die Wahrscheinlichkeit, dass die abhängige Variable $y$ den Wert 1 annimmt, gegeben die Werte der unabhängigen Variablen $x_1, x_2, \ldots, x_n$.
+
+\vspace*{0.35cm}
+
+\section{Entropie}\label{Entropie}
+Entropie misst die \textit{Unordnung} in einer Menge an Elementen (die minimale Menge an Bits nötig um ein Element zu kodieren).
+\begin{equation}
+E(S) = -p_{+}\log_2 p_{+} - p_{-}\log_2p_{-}
+\end{equation}
+Hierbei bezeichnet $p_{+}$ den Anteil der positiven und $p_{-}$ den Anteil der negativen Beispiele im Datensatz. Ein Satz $S$ mit nur positiven (oder nur negativen) Beispielen hätte keine Entropie (d.h. $E(S)=0$), während ein Satz mit der gleichen Anzahl von positiven und negativen Beispielen maximale Entropie hätte ($E(S)=1$).
 
 
 \end{document}
+
