@@ -3,14 +3,19 @@
 
 *Work in progress...*
 
+Done: 
+
+* Numbers
+* Fundamentals \& Arithmetic Laws
+
 ## Mathematical Concepts Cheat Sheet for University
 
 This cheat sheet focuses on practical applications rather than background knowledge or detailed explanations - a quick look up and recall sort of document. 
 
 It also covers more advanced concepts, including machine learning, model applications and their evaluation among others. You can click the links below to jump to the desired chapter. 
 
-- Numbers
-- Basics & Arithmetic Rules (Logarithms, Roots, Powers, etc.)
+- [Numbers](./english_document/Template.pdf#chapter:Numbers)
+- [Basics & Arithmetic Rules](./english_document/Template.pdf#Fundamentals & Arithmetic Rules) (Logarithms, Roots, Powers, etc.)
 - Probability Theory
 - Statistics
 - Geometry
