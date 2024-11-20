@@ -1,8 +1,8 @@
-PWD /Users/inuit/Documents/Gitrepos/MatheHelfer/Paper
+PWD /Users/inuit/Documents/Gitrepos/MatheHelfer/english_document
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/inuit/Documents/Gitrepos/MatheHelfer/Paper/Template.tex
+INPUT /Users/inuit/Documents/Gitrepos/MatheHelfer/english_document/Template.tex
 OUTPUT Template.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
@@ -623,11 +623,11 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT ../Bilder/Gaußsche_Zahlenebene.png
-INPUT ../Bilder/Gaußsche_Zahlenebene.png
-INPUT ../Bilder/Gaußsche_Zahlenebene.png
-INPUT ../Bilder/Gaußsche_Zahlenebene.png
-INPUT ../Bilder/Gaußsche_Zahlenebene.png
+INPUT ../images/Gaußsche_Zahlenebene.png
+INPUT ../images/Gaußsche_Zahlenebene.png
+INPUT ../images/Gaußsche_Zahlenebene.png
+INPUT ../images/Gaußsche_Zahlenebene.png
+INPUT ../images/Gaußsche_Zahlenebene.png
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm

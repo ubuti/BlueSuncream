@@ -15,12 +15,14 @@ This cheat sheet focuses on practical applications rather than background knowle
 It also covers more advanced concepts, including machine learning, model applications and their evaluation among others. You can click the links below to jump to the desired chapter. 
 
 - [Numbers](./english_document/Template.pdf#chapter:Numbers)
-- [Basics & Arithmetic Rules](./english_document/Template.pdf#Fundamentals & Arithmetic Rules) (Logarithms, Roots, Powers, etc.)
+- [Basics & Arithmetic Rules](./english_document/Template.pdf#FundamentalArithmeticLaws)
 - Probability Theory
 - Statistics
 - Geometry
-- Algebra (Vectors, Matrices, Determinants, Arithmetic Rules)
-- Analysis (Sequences/Series, Integrals, Derivatives, Fourier)
-- Machine Learning
+- Algebra
+  
+- Analysis
+-  Machine Learning
+
 
 No guarantee for the accuracy of the content is provided. This is primarily a resource for personal use. Use at your own risk!
