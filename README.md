@@ -27,5 +27,7 @@ It also covers more advanced concepts, including machine learning, model applica
 
 No guarantee for the accuracy of the content is provided. This is primarily a resource for personal use. Use at your own risk!
 
-
-<iframe src="./english_document/Template.pdf" width="600" height="400"></iframe>
+<object data="./english_document/Template.pdf" 
+type="application/pdf" width="600" height="400">
+  <p>Your browser does not support PDFs. <a href="./english_document/Template.pdf" >View the PDF</a>.</p>
+</object>
