@@ -1,6 +1,8 @@
 # BlueSuncream
 
 
+*Work in progress...*
+
 ## Mathematical Concepts Cheat Sheet for University
 
 This cheat sheet focuses on practical applications rather than background knowledge or detailed explanations - a quick look up and recall sort of document. 
