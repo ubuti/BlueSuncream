@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QNamed after the Swiss mathematician and physicist Leonhard Euler (1707-1783), the number \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q is important, particularly because of the exponential function\\E$"}

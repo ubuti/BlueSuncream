@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <style>
+    .controls {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .data-point {
+      fill: red;
+      opacity: 0.5;
+    }
+    .distribution-line {
+      fill: none;
+      stroke: blue;
+      stroke-width: 2;
+    }
+    .likelihood-text {
+      font-family: Arial;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <div>
+      <label>Mean (μ): <span id="meanValue">0</span></label>
+      <input type="range" id="meanSlider" min="-3" max="3" step="0.1" value="0">
+    </div>
+    <div>
+      <label>Standard Deviation (σ): <span id="stdValue">1</span></label>
+      <input type="range" id="stdSlider" min="0.1" max="3" step="0.1" value="1">
+    </div>
+    <div>
+      <p>Log Likelihood: <span id="likelihood">0</span></p>
+    </div>
+  </div>
+  <svg id="plot" width="600" height="400"></svg>
+
+  <script>
+    // Generate sample data
+    const trueData = [0.2, 0.4, 0.1, -0.1, 0.3];
+    
+    // Set up SVG
+    const margin = {top: 20, right: 20, bottom: 30, left: 40};
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
+    
+    const svg = d3.select("#plot")
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+    
+    // Scales
+    const x = d3.scaleLinear()
+      .domain([-3, 3])
+      .range([0, width]);
+      
+    const y = d3.scaleLinear()
+      .domain([0, 0.8])
+      .range([height, 0]);
+    
+    // Add axes
+    svg.append("g")
+      .attr("transform", `translate(0,${height})`)
+      .call(d3.axisBottom(x));
+    
+    svg.append("g")
+      .call(d3.axisLeft(y));
+    
+    // Normal distribution function
+    function normalPDF(x, mean, std) {
+      return (1 / (std * Math.sqrt(2 * Math.PI))) * 
+             Math.exp(-0.5 * Math.pow((x - mean) / std, 2));
+    }
+    
+    // Calculate log likelihood
+    function logLikelihood(data, mean, std) {
+      return data.reduce((sum, x) => 
+        sum + Math.log(normalPDF(x, mean, std)), 0);
+    }
+    
+    // Update plot
+    function updatePlot() {
+      const mean = parseFloat(d3.select("#meanSlider").property("value"));
+      const std = parseFloat(d3.select("#stdSlider").property("value"));
+      
+      // Update display values
+      d3.select("#meanValue").text(mean.toFixed(2));
+      d3.select("#stdValue").text(std.toFixed(2));
+      
+      // Calculate likelihood
+      const ll = logLikelihood(trueData, mean, std);
+      d3.select("#likelihood").text(ll.toFixed(2));
+      
+      // Generate distribution curve
+      const curve = d3.line()
+        .x(d => x(d))
+        .y(d => y(normalPDF(d, mean, std)));
+      
+      const points = d3.range(-3, 3.1, 0.1);
+      
+      // Update or create distribution line
+      const line = svg.selectAll(".distribution-line")
+        .data([points]);
+        
+      line.enter()
+        .append("path")
+        .merge(line)
+        .attr("class", "distribution-line")
+        .attr("d", curve);
+      
+      // Update or create data points
+      const dots = svg.selectAll(".data-point")
+        .data(trueData);
+        
+      dots.enter()
+        .append("circle")
+        .merge(dots)
+        .attr("class", "data-point")
+        .attr("cx", d => x(d))
+        .attr("cy", height)
+        .attr("r", 5);
+    }
+    
+    // Add event listeners
+    d3.select("#meanSlider").on("input", updatePlot);
+    d3.select("#stdSlider").on("input", updatePlot);
+    
+    // Initial plot
+    updatePlot();
+  </script>
+</body>
+</html>
