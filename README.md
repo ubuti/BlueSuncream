@@ -7,6 +7,8 @@ Done:
 
 * Numbers
 * Fundamentals \& Arithmetic Laws
+* Probability Theory
+* Statistics
 
 ## Mathematical Concepts Cheat Sheet for University
 
@@ -16,8 +18,8 @@ It also covers more advanced concepts, including machine learning, model applica
 
 - [Numbers](./english_document/Template.pdf#chapter:Numbers)
 - [Basics & Arithmetic Rules](./english_document/Template.pdf#FundamentalArithmeticLaws)
-- Probability Theory
-- Statistics
+- [Probability Theory](./english_document/Template.pdf#chapter:Probability)
+- [Statistics](./english_document/Template.pdf#chapter:Statistics)
 - Geometry
 - Algebra
   
@@ -30,4 +32,7 @@ No guarantee for the accuracy of the content is provided. This is primarily a re
 <object data="./english_document/Template.pdf" 
 type="application/pdf" width="600" height="400">
   <p>Your browser does not support PDFs. <a href="./english_document/Template.pdf" >View the PDF</a>.</p>
-</object>
+</object> 
+
+
+This project is licensed under the [Community Data License Agreement (CDLA)](https://cdla.dev/), which allows you to freely watch, modify, and share the content. For more information refer to the [LICENSE](./LICENSE).

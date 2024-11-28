@@ -1,8 +1,55 @@
 \chapter{Probability}\label{Probability}
 
+
 \section{Introduction}\label{Introduction}
 
-\subsection{Dependent and Independent Variables}\label{Dependent and Independent Variables}
+\subsection{Basic Concepts and Terminology}
+
+\subsubsection{Sample Space (S)}
+The set of all possible outcomes of a random experiment.
+
+\subsubsection{Event (E)}
+A subset of the sample space, representing a specific outcome or a group of outcomes.
+
+\subsubsection{Types of Events}
+\paragraph{Simple Events}
+Events consisting of a single outcome.
+
+\paragraph{Compound Events}
+Events consisting of two or more outcomes.
+
+\paragraph{Mutually Exclusive Events}
+Two events \( A \) and \( B \) are mutually exclusive if they cannot occur simultaneously, i.e., \( A \cap B = \emptyset \).
+
+\paragraph{Independent Events}
+Events \( A \) and \( B \) are independent if the occurrence of one does not affect the probability of the other, i.e.,
+\spacedequation{P(A \cap B) = P(A) \cdot P(B).}
+
+\paragraph{Complementary Events}
+The complement of event \( A \), denoted by \( A^c \), includes all outcomes in \( S \) that are not in \( A \). The relationship is given by:
+\spacedequation{P(A^c) = 1 - P(A).}
+
+\subsubsection{Fundamental Principle of Counting} If an event can occur in \( m \) ways and another event can occur in \( n \) ways, the total number of ways both events can occur is \( m \cdot n \).
+    
+\subsubsection{Permutations} The number of ways to arrange \( r \) objects from a set of \( n \) distinct objects:
+\spacedequation{nPr = \frac{n!}{(n-r)!}.}
+
+\subsubsection{Combinations} The number of ways to choose \( r \) objects from a set of \( n \) distinct objects, without regard to order:
+\spacedequation{nCr = \frac{n!}{r!(n-r)!}.}
+
+
+\subsection{Random Variable}\label{Random Variable}
+A random variable is a variable that takes on different numerical values based on the outcome of the event. It is a function that assigns a real number to each possible outcome in the sample space. Random variables can be classified into two types: discrete and continuous.
+
+A \textbf{Discrete Random Variable} takes on a countable number of distinct values. Examples include the number of heads in a series of coin tosses or the number of students present in a class.
+
+A \textbf{Continuous Random Variable} takes on an infinite number of possible values within a given range. Examples include the height of students in a class or the time it takes to run a marathon.
+
+Mathematically, a random variable $X$ can be defined as a function $X: \Omega \rightarrow \mathbb{R}$, where $\Omega$ is the sample space of the random experiment, and $\mathbb{R}$ is the set of real numbers.
+
+\subsection{Dependent and independent variables}\label{Dependent and independent variables}
+The probability distribution of a random variable describes how probabilities are assigned to its possible values. For discrete random variables, this is given by the probability mass function (PMF), and for continuous random variables, it is given by the probability density function (PDF).
+
 The independent variable is the factor that a researcher manipulates, while the dependent variable is the outcome that is measured to see the effect of the independent variable.
 
 In an experiment, the independent variable is the variable that is changed or controlled to test the effects on the dependent variable. The dependent variable is the variable being tested and measured. For example, in a study to determine the effect of different amounts of sunlight on plant growth, the amount of sunlight is the independent variable, and the growth of the plant is the dependent variable.
@@ -11,9 +58,9 @@ Mathematically, if $X$ is the independent variable and $Y$ is the dependent vari
 \spacedequation{Y = f(X),}
 where $f$ is a function that describes how $Y$ depends on $X$.
 
-In statistical analysis, the relationship between the independent and dependent variables can be analyzed using various methods such as correlation and regression analysis. The correlation coefficient $r$ measures the strength and direction of the linear relationship between two variables:
-\spacedequation{r = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum (X_i - \bar{X})^2 \sum (Y_i - \bar{Y})^2}},}
-where $X_i$ and $Y_i$ are the individual sample points, and $\bar{X}$ and $\bar{Y}$ are the means of $X$ and $Y$ respectively.
+\textit{Note:} There might a multiple dependent variables ($n$) that determine $Y$. Furthermore, there are also multiple observations ($i$) in most cases, such that the extended notation should become familiar:
+
+\spacedequation{Y^i = f(X_n^i), \quad \forall n = 1, \ldots, n.}
 
 Regression analysis can be used to model the relationship between the independent and dependent variables. In simple linear regression, the relationship is modeled as:
 \spacedequation{Y = \beta_0 + \beta_1 X + \epsilon,}
@@ -29,15 +76,15 @@ Kolmogorov's three axioms are the most well-known description of the fundamental
     \item $P(A \cup B) = P(A) + P(B)$ for disjoint sets $A$ and $B$: This means that no outcome satisfies both events. $A$ and $B$ are called disjoint in this case.
 \end{enumerate}
 
-\subsection{Probability Concepts}\label{Probability Concepts}
+\subsection{Joint, marginal and conditional}\label{Joint, marginal and conditional}
 
 \subsubsection{Probability Formulas}\label{Probability Formulas}
 
-In probability theory, there are various concepts that help us understand the relationships between different events or variables. These include joint probability, marginal probability, and conditional probability. The joint probability $P(X, Y)$ gives the probability that both event X and event Y occur. It can be calculated by multiplying the conditional probability of one event given the other by the probability of the other event:
+In probability theory, there are various concepts that help us understand the relationships between different events or variables. These include joint probability, marginal probability, and conditional probability. The joint probability $P(X, Y)$ gives the probability that both event X and event Y occur. It can be calculated by the \textbf{product rule}:
 
 \spacedequation{P(X, Y) = P(X|Y) \cdot P(Y) = P(Y|X) \cdot P(X).}
 
-The marginal probability (in English \textbf{marginal} or \textbf{total probability}) $P(X)$ is the probability that event X occurs, regardless of other events. It can be calculated by summing the joint probabilities over all possible values of Y:
+The marginal probability (or 'total probability') $P(X)$ is the probability that event X occurs, regardless of other events. It can be calculated by summing the joint probabilities over all possible values of Y (i.e. \textbf{the sum rule}):
 
 \spacedequation{P(X) = \sum_{y} P(X, Y=y) = \sum_{y} P(X|Y=y) \cdot P(Y=y).}
 
@@ -53,7 +100,20 @@ And the conditional probability of X given Y and Z is defined as:
 
 \spacedequation{P(X|Y, Z) = \frac{P(X, Y|Z)}{P(Y|Z)}}
 
-with $Y$ and $Z$ being variable.
+with $Y$ and $Z$ being variable. For an arbitrary number of variables \(X_1, X_2, \ldots, X_n\), the joint probability given \(Z\) can be extended as:
+
+\spacedequation{P(X_1, X_2, \ldots, X_n | Z) = P(X_1 | X_2, \ldots, X_n, Z) \cdot P(X_2 | X_3, \ldots, X_n, Z) \cdots P(X_{n-1} | X_n, Z) \cdot P(X_n | Z).}
+
+Similarly, the conditional probability of \(X_1\) given \(X_2, \ldots, X_n\) and \(Z\) is:
+
+\spacedequation{P(X_1 | X_2, \ldots, X_n, Z) = \frac{P(X_1, X_2, \ldots, X_n | Z)}{P(X_2, \ldots, X_n | Z)}.}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{../images/plot_joint_marginal_conditional.png.jpg}
+    \caption{Joint and Marginal, and Conditional Probability. Can you imagine the coloring for the last? \url{https://www.youtube.com/watch?v=xu-HhF3SpbEs}.}
+    \label{fig:joint_marginal_conditional}
+\end{figure}
 
 \subsubsection{Conditional Independence}\label{Conditional Independence} 
 Conditional independence occurs when the occurrence of event X has no effect on the probability of event Y given event Z. In other words, X and Y are conditionally independent if the conditional probability of Y given X and Z is equal to the conditional probability of Y given Z. This is mathematically expressed by the equation 
@@ -64,20 +124,77 @@ If X and Y are independent given Z, it is written as
 \subsubsection{Independence of Variables}\label{Independence of Variables} 
 Two variables X and Y are independent if the occurrence of one variable has no effect on the probability of the occurrence of the other variable. Mathematically, this means that the joint probability of X and Y is equal to the product of the individual probabilities of X and Y:
 \spacedequation{P(X,Y) = P(X) \cdot P(Y).}
-If X and Y are independent, it also holds that \spacedequation{P(X|Y) = P(X)} and \spacedequation{P(Y|X) = P(Y).}
+If X and Y are independent, it also holds that \spacedequation{P(X|Y) = P(X).}
 
-\section{Probability Distributions}\label{Probability Distributions}
+\subsection{Bayes}\label{Bayes}
+Bayes' theorem makes statements about probabilities given that one knows data or observations, moving from events ($Data$) to their causes (parameters $\Theta$). The more data there is, the more reliable the probability distribution of a variable becomes. Bayes' theorem states:
+
+\spacedequation{P(\Theta|Data) = \frac{P(Data|\Theta) \cdot P(\Theta)}{P(Data)}.}
+
+Here, $P(\Theta|Data)$ is the \textbf{posterior} probability of the parameters given the data. $P(Data|\Theta)$ is the \textbf{likelihood} of observing the data given the parameters. For $P(\Theta)$, one usually sets a \textbf{prior}, that is, its probabilities without prior knowledge.
+
+\emptyline
+\textit{Note: It is a good exercise to derive Bayes' theorem from the definition of conditional probability \url{http://www.hep.upenn.edu/~johnda/Papers/Bayes.pdf}.}
+\emptyline
+
+Let us consider the so-called "Monty Hall Problem". In this game, there are three doors, behind one of which is a prize, and behind the other two are goats. The player selects a door, and the host opens another door behind which there is a goat. The player then has the option to stay with their original choice or to switch. The question is: Should the player stay with their original choice? Using Bayes' theorem, this question can be clearly answered.
+Let $A$ be the chosen door and $C$ the door that the host opens. What is the probability that the prize is behind door $A$, given that $C$ was opened, and what is it for door $B$? We need to calculate $P(A|C)$ and $P(B|C)$. If $P(B|C) > P(A|C)$, one should switch! We know that $P(A) = P(B) = P(C) = \dfrac{1}{3}$, and that only one door is opened behind which there is not the prize. It holds:
+
+\spacedequation{P(A|C) = \frac{P(C|A) \cdot P(A)}{P(C)} = \frac{P(C|A) \cdot P(A)}{P(C|A) \cdot P(A) + P(C|B) \cdot P(B) + P(C|C) \cdot P(C)},}
+
+where $P(C)$ normalizes the probabilities according to the principle of total probability (the sum of all probabilities under which $C$ is opened in our case). Substituting the values, we obtain:
+
+\spacedequation{P(A|C) = \frac{0.5 \cdot \dfrac{1}{3}}{0.5 \cdot \dfrac{1}{3} + 1 \cdot \dfrac{1}{3} + 0 \cdot \dfrac{1}{3}} = \dfrac{1}{3}.}
+
+To understand the logic, ask the question: \textit{How likely is it to open door $X$, given that the prize is behind door $Y$?} On the other hand:
+
+\spacedequation{P(B|C) = \frac{P(C|B) \cdot P(B)}{P(C)} = \frac{P(C|B) \cdot P(B)}{P(C|B) \cdot P(B) + P(C|A) \cdot P(A) + P(C|C) \cdot P(C)}}
+
+\spacedequation{= \frac{1 \cdot \dfrac{1}{3}}{1 \cdot \dfrac{1}{3} + 0.5 \cdot \dfrac{1}{3} + 0 \cdot \dfrac{1}{3}} = \dfrac{2}{3}}
+
+And thus greater for $B$, so one should switch.
+
+Therefore, using Bayes' theorem, we find that the probability of winning by switching doors is $\dfrac{2}{3}$, while the probability of winning by staying is only $\dfrac{1}{3}$. This counterintuitive result demonstrates the power of Bayesian reasoning in updating probabilities based on new information.
+
+Bayes' theorem is widely used in various fields such as statistics, machine learning, medicine, and engineering. It allows for the updating of beliefs in light of new evidence, making it a fundamental tool for probabilistic inference.
+
+In practical applications, Bayes' theorem helps in situations where one needs to determine the probability of a hypothesis given observed data. For example, in medical diagnostics, Bayes' theorem can be used to calculate the probability of a disease given a positive test result, taking into account the prior probability of the disease and the accuracy of the test.
+
+Bayesian methods also play a crucial role in modern data science and machine learning algorithms, such as Bayesian networks and Bayesian inference, which provide a probabilistic approach to reasoning under uncertainty.
+
+\section{Distributions}\label{Distributions}
 Probability distributions describe how probabilities are assigned to different outcomes of a random variable. They are categorized into discrete and continuous types.
-
 A \textbf{Discrete Random Variable} has a finite or countable number of possible values, such as the outcomes of a coin toss or a die roll.
-
 A \textbf{Continuous Random Variable} has an infinite number of possible values within a given range, such as hair length measured with increasing precision.
-
 The \textbf{Probability Density Function} (PDF) describes the likelihood of a continuous random variable taking on a particular value. The total area under the PDF curve is 1, representing the total probability. Since the probability of a single value is effectively zero, probabilities are calculated over intervals using integration, resulting in the cumulative distribution function (CDF).
 
-Key concepts include the expected value $E$, variance $V$ (with standard deviation $\sqrt{V}$), and the PDF.
+\emptyline
+Key concepts include the expected value $E$, variance $V$ (with standard deviation $\sqrt{V}$).
+\begin{itemize}
+    \item[] \textbf{Expected Value (Mean)}: 
+    \begin{itemize}
+        \item[] For a discrete random variable \( X \) with possible values \( x_i \) and probabilities \( P(x_i) \):
+        \spacedequation{E(X) = \sum_{i=1}^{n} x_i \cdot P(x_i).}
+        
+        \item[] For a continuous random variable \( X \) with probability density function \( f(x) \):
+        \spacedequation{E(X) = \int_{-\infty}^{\infty} x \cdot f(x) \, dx.}
+    \end{itemize}
+    
+    \item[] \textbf{Variance}: 
+    \begin{itemize}
+        \item[] For a discrete random variable \( X \):
+        \spacedequation{\text{Var}(X) = E[(X - \mu)^2] = \sum_{i=1}^{n} (x_i - \mu)^2 \cdot P(x_i).}
+        
+        \item[] For a continuous random variable \( X \):
+        \spacedequation{\text{Var}(X) = E[(X - \mu)^2] = \int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) \, dx.}
+    \end{itemize}
+    
+    \item[] \textbf{Standard Deviation}: The standard deviation \( \sigma \) is the square root of the variance:
+    \spacedequation{\sigma = \sqrt{\text{Var}(X)}.}
+\end{itemize}
 
-\section{Continuous Probability Distributions}\label{Continuous Probability Distributions}
+
+\section{Continuous Distributions}\label{Continuous Distributions}
 
 \subsection{Normal Distribution}\label{Normal Distribution}
 The normal distribution is also called the Gaussian bell curve. The two parameters ($\mu$ and $\sigma$) represent the mean and standard deviation of the normal distribution. The central limit theorem states that under certain general conditions, the sum of n independent, identically distributed random variables is again normally distributed.
@@ -300,38 +417,5 @@ The MLE $\hat{\theta}$ is the value of $\theta$ that maximizes $\ell(\theta)$:
 \spacedequation{\hat{\theta} = \arg \max_{\theta} \ell(\theta).}
 
 To illustrate MLE, take a look at an animation that shows how the likelihood function changes as the parameter values are adjusted: execute the script found here: \href{../scripts/mle_viz.py}{mle\_viz.py}
-
-\section{Bayes}\label{Bayes}
-Bayes' theorem makes statements about probabilities given that one knows data or observations, moving from events ($Data$) to their causes (parameters $\Theta$). The more data there is, the more reliable the probability distribution of a variable becomes. Bayes' theorem states:
-
-\spacedequation{P(\Theta|Data) = \frac{P(Data|\Theta) \cdot P(\Theta)}{P(Data)}.}
-
-Here, $P(\Theta|Data)$ is the \textbf{posterior} probability of the parameters given the data. $P(Data|\Theta)$ is the \textbf{likelihood} of observing the data given the parameters. For $P(\Theta)$, one usually sets a \textbf{prior}, that is, its probabilities without prior knowledge.
-
-Let us consider the so-called "Monty Hall Problem". In this game, there are three doors, behind one of which is a prize, and behind the other two are goats. The player selects a door, and the host opens another door behind which there is a goat. The player then has the option to stay with their original choice or to switch. The question is: Should the player stay with their original choice? Using Bayes' theorem, this question can be clearly answered.
-
-Let $A$ be the chosen door and $C$ the door that the host opens. What is the probability that the prize is behind door $A$, given that $C$ was opened, and what is it for door $B$? \textbf{\textit{We need to calculate $P(A|C)$ and $P(B|C)$.}} If $P(B|C) > P(A|C)$, one should switch! We know that $P(A) = P(B) = P(C) = \dfrac{1}{3}$, and that only one door is opened behind which there is not the prize. It holds:
-
-\spacedequation{P(A|C) = \frac{P(C|A) \cdot P(A)}{P(C)} = \frac{P(C|A) \cdot P(A)}{P(C|A) \cdot P(A) + P(C|B) \cdot P(B) + P(C|C) \cdot P(C)},}
-
-where $P(C)$ normalizes the probabilities according to the principle of total probability (the sum of all probabilities under which $C$ is opened in our case). Substituting the values, we obtain:
-
-\spacedequation{P(A|C) = \frac{0.5 \cdot \dfrac{1}{3}}{0.5 \cdot \dfrac{1}{3} + 1 \cdot \dfrac{1}{3} + 0 \cdot \dfrac{1}{3}} = \dfrac{1}{3}.}
-
-To understand the logic, ask the question: \textit{How likely is it to open door $X$, given that the prize is behind door $Y$?} On the other hand:
-
-\spacedequation{P(B|C) = \frac{P(C|B) \cdot P(B)}{P(C)} = \frac{P(C|B) \cdot P(B)}{P(C|B) \cdot P(B) + P(C|A) \cdot P(A) + P(C|C) \cdot P(C)}}
-
-\spacedequation{= \frac{1 \cdot \dfrac{1}{3}}{1 \cdot \dfrac{1}{3} + 0.5 \cdot \dfrac{1}{3} + 0 \cdot \dfrac{1}{3}} = \dfrac{2}{3}}
-
-And thus greater for $B$, so one should switch.
-
-Therefore, using Bayes' theorem, we find that the probability of winning by switching doors is $\dfrac{2}{3}$, while the probability of winning by staying is only $\dfrac{1}{3}$. This counterintuitive result demonstrates the power of Bayesian reasoning in updating probabilities based on new information.
-
-Bayes' theorem is widely used in various fields such as statistics, machine learning, medicine, and engineering. It allows for the updating of beliefs in light of new evidence, making it a fundamental tool for probabilistic inference.
-
-In practical applications, Bayes' theorem helps in situations where one needs to determine the probability of a hypothesis given observed data. For example, in medical diagnostics, Bayes' theorem can be used to calculate the probability of a disease given a positive test result, taking into account the prior probability of the disease and the accuracy of the test.
-
-Bayesian methods also play a crucial role in modern data science and machine learning algorithms, such as Bayesian networks and Bayesian inference, which provide a probabilistic approach to reasoning under uncertainty.
 
 

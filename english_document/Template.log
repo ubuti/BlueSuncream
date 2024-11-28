@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  25 NOV 2024 01:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.1)  28 NOV 2024 01:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -297,29 +297,29 @@ File: atfi-pdftex.def 2019/11/26 v2.11 attachfile2 driver for pdfTeX (HO)
 \atfi@appearancebox=\box56
 \c@atfi@flags=\count296
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 46.
+Package hyperref Info: Option `colorlinks' set `true' on input line 49.
  (./Template.aux)
 \openout1 = `Template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-Package hyperref Info: Link coloring ON on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+Package hyperref Info: Link coloring ON on input line 60.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -329,9 +329,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count297
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
  (./Template.out) (./Template.out)
 \@outlinefile=\write4
 \openout4 = `Template.out'.
@@ -389,11 +389,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -460,7 +460,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 43.
 
-<../images/Gaußsche_Zahlenebene.png, id=167, 642.4pt x 484.81125pt>
+<../images/Gaußsche_Zahlenebene.png, id=228, 642.4pt x 484.81125pt>
 File: ../images/Gaußsche_Zahlenebene.png Graphic file (type png)
 <use ../images/Gaußsche_Zahlenebene.png>
 Package pdftex.def Info: ../images/Gaußsche_Zahlenebene.png  used on input line 52.
@@ -569,33 +569,71 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
-<../images/plot_normal_distribution.png, id=344, 462.528pt x 346.896pt>
+<../images/plot_joint_marginal_conditional.png.jpg, id=401, 634.37pt x 349.305pt>
+File: ../images/plot_joint_marginal_conditional.png.jpg Graphic file (type jpg)
+<use ../images/plot_joint_marginal_conditional.png.jpg>
+Package pdftex.def Info: ../images/plot_joint_marginal_conditional.png.jpg  used on input line 113.
+(pdftex.def)             Requested size: 284.3853pt x 156.59416pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16 <../images/plot_joint_marginal_conditional.png.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]
+<../images/plot_normal_distribution.png, id=450, 462.528pt x 346.896pt>
 File: ../images/plot_normal_distribution.png Graphic file (type png)
 <use ../images/plot_normal_distribution.png>
-Package pdftex.def Info: ../images/plot_normal_distribution.png  used on input line 97.
+Package pdftex.def Info: ../images/plot_normal_distribution.png  used on input line 214.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16 <../images/plot_normal_distribution.png>]
-<../images/plot_mixed_normal_distribution.png, id=354, 462.528pt x 346.896pt>
+<../images/plot_mixed_normal_distribution.png, id=451, 462.528pt x 346.896pt>
 File: ../images/plot_mixed_normal_distribution.png Graphic file (type png)
 <use ../images/plot_mixed_normal_distribution.png>
-Package pdftex.def Info: ../images/plot_mixed_normal_distribution.png  used on input line 109.
+Package pdftex.def Info: ../images/plot_mixed_normal_distribution.png  used on input line 226.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
-<../images/plot_t_distributions_overlayed.png, id=355, 462.528pt x 346.896pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20 <../images/plot_normal_distribution.png>]
+<../images/plot_t_distributions_overlayed.png, id=461, 462.528pt x 346.896pt>
 File: ../images/plot_t_distributions_overlayed.png Graphic file (type png)
 <use ../images/plot_t_distributions_overlayed.png>
-Package pdftex.def Info: ../images/plot_t_distributions_overlayed.png  used on input line 126.
+Package pdftex.def Info: ../images/plot_t_distributions_overlayed.png  used on input line 243.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -604,11 +642,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17 <../images/plot_mixed_normal_distribution.png>]
-<../images/plot_exponential_distribution.png, id=365, 462.528pt x 346.896pt>
+[21 <../images/plot_mixed_normal_distribution.png> <../images/plot_t_distributions_overlayed.png>]
+<../images/plot_exponential_distribution.png, id=472, 462.528pt x 346.896pt>
 File: ../images/plot_exponential_distribution.png Graphic file (type png)
 <use ../images/plot_exponential_distribution.png>
-Package pdftex.def Info: ../images/plot_exponential_distribution.png  used on input line 144.
+Package pdftex.def Info: ../images/plot_exponential_distribution.png  used on input line 261.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
 
 
@@ -618,37 +656,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18 <../images/plot_t_distributions_overlayed.png> <../images/plot_exponential_distribution.png>]
-<../images/plot_poisson_distribution.png, id=377, 462.528pt x 346.896pt>
+[22 <../images/plot_exponential_distribution.png>]
+<../images/plot_poisson_distribution.png, id=482, 462.528pt x 346.896pt>
 File: ../images/plot_poisson_distribution.png Graphic file (type png)
 <use ../images/plot_poisson_distribution.png>
-Package pdftex.def Info: ../images/plot_poisson_distribution.png  used on input line 156.
+Package pdftex.def Info: ../images/plot_poisson_distribution.png  used on input line 273.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[19 <../images/plot_poisson_distribution.png>]
-<../images/plot_gamma_distribution.png, id=387, 462.528pt x 346.896pt>
+<../images/plot_gamma_distribution.png, id=483, 462.528pt x 346.896pt>
 File: ../images/plot_gamma_distribution.png Graphic file (type png)
 <use ../images/plot_gamma_distribution.png>
-Package pdftex.def Info: ../images/plot_gamma_distribution.png  used on input line 175.
+Package pdftex.def Info: ../images/plot_gamma_distribution.png  used on input line 292.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
-<../images/plot_beta_distribution.png, id=388, 462.528pt x 346.896pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23 <../images/plot_poisson_distribution.png>]
+<../images/plot_beta_distribution.png, id=494, 462.528pt x 346.896pt>
 File: ../images/plot_beta_distribution.png Graphic file (type png)
 <use ../images/plot_beta_distribution.png>
-Package pdftex.def Info: ../images/plot_beta_distribution.png  used on input line 194.
+Package pdftex.def Info: ../images/plot_beta_distribution.png  used on input line 311.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `Pearson's chi-square test' on page 20 undefined on input line 200.
+LaTeX Warning: Reference `Pearson's chi-square test' on page 24 undefined on input line 317.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -657,11 +695,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20 <../images/plot_gamma_distribution.png>]
-<../images/plot_chi_squared_overlayed.png, id=403, 462.528pt x 346.896pt>
+[24 <../images/plot_gamma_distribution.png> <../images/plot_beta_distribution.png>]
+<../images/plot_chi_squared_overlayed.png, id=509, 462.528pt x 346.896pt>
 File: ../images/plot_chi_squared_overlayed.png Graphic file (type png)
 <use ../images/plot_chi_squared_overlayed.png>
-Package pdftex.def Info: ../images/plot_chi_squared_overlayed.png  used on input line 213.
+Package pdftex.def Info: ../images/plot_chi_squared_overlayed.png  used on input line 330.
+(pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25 <../images/plot_chi_squared_overlayed.png>]
+<../images/plot_uniform_distribution.png, id=523, 462.528pt x 346.896pt>
+File: ../images/plot_uniform_distribution.png Graphic file (type png)
+<use ../images/plot_uniform_distribution.png>
+Package pdftex.def Info: ../images/plot_uniform_distribution.png  used on input line 351.
+(pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
+<../images/plot_binomial_distribution.png, id=525, 462.528pt x 346.896pt>
+File: ../images/plot_binomial_distribution.png Graphic file (type png)
+<use ../images/plot_binomial_distribution.png>
+Package pdftex.def Info: ../images/plot_binomial_distribution.png  used on input line 378.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
 
 
@@ -674,49 +731,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21 <../images/plot_beta_distribution.png>]
-<../images/plot_uniform_distribution.png, id=417, 462.528pt x 346.896pt>
-File: ../images/plot_uniform_distribution.png Graphic file (type png)
-<use ../images/plot_uniform_distribution.png>
-Package pdftex.def Info: ../images/plot_uniform_distribution.png  used on input line 234.
-(pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[22 <../images/plot_chi_squared_overlayed.png> <../images/plot_uniform_distribution.png>]
-<../images/plot_binomial_distribution.png, id=430, 462.528pt x 346.896pt>
-File: ../images/plot_binomial_distribution.png Graphic file (type png)
-<use ../images/plot_binomial_distribution.png>
-Package pdftex.def Info: ../images/plot_binomial_distribution.png  used on input line 261.
-(pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23 <../images/plot_binomial_distribution.png>]
-<../images/plot_bernoulli_distribution.png, id=442, 462.528pt x 346.896pt>
+[26 <../images/plot_uniform_distribution.png>]
+<../images/plot_bernoulli_distribution.png, id=537, 462.528pt x 346.896pt>
 File: ../images/plot_bernoulli_distribution.png Graphic file (type png)
 <use ../images/plot_bernoulli_distribution.png>
-Package pdftex.def Info: ../images/plot_bernoulli_distribution.png  used on input line 283.
+Package pdftex.def Info: ../images/plot_bernoulli_distribution.png  used on input line 400.
 (pdftex.def)             Requested size: 284.3853pt x 213.30006pt.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <../images/plot_bernoulli_distribution.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -724,7 +748,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]) (./Statistic.tex) (./Geometry.tex) (./Linear Algebra.tex) (./Analysis.tex) (./Machine Learning.tex)
+[27 <../images/plot_binomial_distribution.png>]) (./Statistic.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -732,26 +756,75 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26] (./Template.aux)
+[28 <../images/plot_bernoulli_distribution.png>]
+Chapter 4.
+[29
+
+]
+<../images/type-i-and-ii-error-2.png, id=567, 1021.8175pt x 610.28pt>
+File: ../images/type-i-and-ii-error-2.png Graphic file (type png)
+<use ../images/type-i-and-ii-error-2.png>
+Package pdftex.def Info: ../images/type-i-and-ii-error-2.png  used on input line 70.
+(pdftex.def)             Requested size: 341.26584pt x 203.81416pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]\OT1/cmr/m/n/12 Figure 4.1: []Type I and Type II Er-rors [][]$\OT1/cmtt/m/n/12 https : / / www . scribbr . com / statistics /
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31 <../images/type-i-and-ii-error-2.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]) (./Geometry.tex) (./Linear Algebra.tex) (./Analysis.tex) (./Machine Learning.tex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33] (./Template.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Template.out' has not changed.
-(rerunfilecheck)             Checksum: 3EE29DCE50F1FD37215750B3CCA01BEE;5155.
+(rerunfilecheck)             Checksum: 862C59F792BA68B464C3B05C03BA94CC;7343.
  ) 
 Here is how much of TeX's memory you used:
- 12052 strings out of 478268
- 199751 string characters out of 5846348
- 511711 words of memory out of 5000000
- 29869 multiletter control sequences out of 15000+600000
- 481563 words of font info for 75 fonts, out of 8000000 for 9000
+ 12151 strings out of 478268
+ 201604 string characters out of 5846348
+ 510711 words of memory out of 5000000
+ 29917 multiletter control sequences out of 15000+600000
+ 481541 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,12n,79p,1386b,416s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Template.pdf (27 pages, 595626 bytes).
+ 70i,12n,79p,1386b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Template.pdf (34 pages, 722198 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
- 500 compressed objects within 5 object streams
- 199 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 744 PDF objects out of 1000 (max. 8388607)
+ 632 compressed objects within 7 object streams
+ 246 named destinations out of 1000 (max. 500000)
+ 471 words of extra memory for PDF output out of 10000 (max. 10000000)
 
